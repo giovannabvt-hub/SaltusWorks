@@ -3,6 +3,7 @@ import { Cormorant_Garamond, Inter, Libre_Caslon_Text } from "next/font/google";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { site } from "@/lib/site";
+import { asset } from "@/lib/basePath";
 import "./globals.css";
 
 const cormorant = Cormorant_Garamond({
@@ -54,16 +55,18 @@ export const metadata: Metadata = {
     siteName: site.name,
     title: `${site.name} — ${site.tagline}`,
     description: site.description,
-    images: [{ url: "/images/hero.jpg", width: 1200, height: 630, alt: site.name }],
+    images: [
+      { url: asset("/images/hero.jpg"), width: 1200, height: 630, alt: site.name },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: `${site.name} — ${site.tagline}`,
     description: site.description,
-    images: ["/images/hero.jpg"],
+    images: [asset("/images/hero.jpg")],
   },
   icons: {
-    icon: "/favicon.svg",
+    icon: asset("/favicon.svg"),
   },
 };
 

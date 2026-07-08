@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { asset } from "@/lib/basePath";
 import { Spark } from "./Spark";
 
 /**
@@ -20,14 +21,14 @@ export function Hero() {
       {/* Ilustración de marca: árbol de la vida al amanecer (asset propio) */}
       <div
         aria-hidden="true"
-        className="absolute inset-0 bg-cover bg-center [background-image:url('/images/hero.svg')]"
+        className="absolute inset-0 bg-cover bg-center"
+        style={{ backgroundImage: `url('${asset("/images/hero.svg")}')` }}
       />
-      {/* Obra final (opcional): al agregar public/images/hero.jpg, se superpone
-          automáticamente; si no existe, se muestra la ilustración de arriba.
-          Se reencuadra hacia abajo para no duplicar el wordmark del nav. */}
+      {/* Obra final: public/images/hero.jpg se superpone a la ilustración. */}
       <div
         aria-hidden="true"
-        className="absolute inset-0 bg-cover bg-no-repeat [background-image:url('/images/hero.jpg')] [background-position:center_72%]"
+        className="absolute inset-0 bg-cover bg-no-repeat [background-position:center]"
+        style={{ backgroundImage: `url('${asset("/images/hero.jpg")}')` }}
       />
       {/* Viñeta radial para legibilidad del texto */}
       <div
