@@ -1,0 +1,204 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Árbol de la vida al amanecer, con un águila, un lobo y un ciervo en las montañas envueltas en niebla">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#4a4468"/>
+      <stop offset="20%" stop-color="#6d6188"/>
+      <stop offset="40%" stop-color="#9a7f95"/>
+      <stop offset="58%" stop-color="#c69a86"/>
+      <stop offset="74%" stop-color="#e9b46f"/>
+      <stop offset="88%" stop-color="#f3ca7c"/>
+      <stop offset="100%" stop-color="#f7dc95"/>
+    </linearGradient>
+    <radialGradient id="horizonGlow" cx="50%" cy="86%" r="60%">
+      <stop offset="0%"  stop-color="#fff2d0" stop-opacity="0.9"/>
+      <stop offset="45%" stop-color="#ffd98f" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#f6c56e" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="sun" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"  stop-color="#fff6e2"/>
+      <stop offset="30%" stop-color="#ffe6ac" stop-opacity="0.92"/>
+      <stop offset="100%" stop-color="#f6c56e" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="canopyGlow" cx="50%" cy="58%" r="55%">
+      <stop offset="0%"  stop-color="#fff0c4" stop-opacity="0.98"/>
+      <stop offset="42%" stop-color="#f4c877" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#e6a23c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ray" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%"  stop-color="#ffe6ac" stop-opacity="0.42"/>
+      <stop offset="100%" stop-color="#ffe6ac" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="haze" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f3ddc0" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#f3ddc0" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="mistBand" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#eadccf" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#eadccf" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#eadccf" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="soft"   x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="16"/></filter>
+    <filter id="softer" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="34"/></filter>
+    <filter id="rayblur" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="10"/></filter>
+    <filter id="edge"    x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="1.6"/></filter>
+    <filter id="ridge"   x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="3"/></filter>
+  </defs>
+
+  <!-- Cielo -->
+  <rect width="1600" height="900" fill="url(#sky)"/>
+  <rect width="1600" height="900" fill="url(#horizonGlow)"/>
+
+  <!-- Nubes de varias profundidades -->
+  <g filter="url(#softer)">
+    <ellipse cx="300" cy="120" rx="320" ry="52" fill="#c9a9b8" opacity="0.5"/>
+    <ellipse cx="1280" cy="95" rx="360" ry="58" fill="#b596a6" opacity="0.5"/>
+    <ellipse cx="900" cy="200" rx="300" ry="46" fill="#e7c7a6" opacity="0.45"/>
+    <ellipse cx="520" cy="300" rx="260" ry="38" fill="#f0d0a2" opacity="0.4"/>
+    <ellipse cx="1150" cy="320" rx="240" ry="36" fill="#f0d0a2" opacity="0.38"/>
+  </g>
+
+  <!-- Montañas: 3 capas con perspectiva atmosférica -->
+  <path d="M0 470 L120 360 L240 440 L360 340 L470 430 L560 380 L560 900 L0 900 Z"
+        fill="#7c7196" opacity="0.35" filter="url(#ridge)"/>
+  <path d="M1600 450 L1500 380 L1400 440 L1300 360 L1200 440 L1120 400 L1120 900 L1600 900 Z"
+        fill="#7c7196" opacity="0.32" filter="url(#ridge)"/>
+  <path d="M0 560 L160 440 L300 520 L440 410 L560 500 L720 470 L860 505 L1000 450 L1160 505 L1300 455 L1440 505 L1600 480 L1600 720 L0 720 Z"
+        fill="#645874" opacity="0.5" filter="url(#edge)"/>
+
+  <!-- Rayos de luz (god rays) desde el sol -->
+  <g filter="url(#rayblur)" opacity="0.6" style="mix-blend-mode:screen">
+    <g fill="url(#ray)">
+      <polygon points="800,660 754,-140 846,-140" transform="rotate(-52 800 660)"/>
+      <polygon points="800,660 762,-140 838,-140" transform="rotate(-34 800 660)"/>
+      <polygon points="800,660 768,-140 832,-140" transform="rotate(-17 800 660)"/>
+      <polygon points="800,660 770,-140 830,-140"/>
+      <polygon points="800,660 762,-140 838,-140" transform="rotate(17 800 660)"/>
+      <polygon points="800,660 754,-140 846,-140" transform="rotate(34 800 660)"/>
+      <polygon points="800,660 748,-140 852,-140" transform="rotate(52 800 660)"/>
+    </g>
+  </g>
+
+  <!-- Sol naciente -->
+  <circle cx="800" cy="660" r="560" fill="url(#sun)"/>
+  <circle cx="812" cy="716" r="30" fill="#fff8ea"/>
+
+  <!-- Neblina del valle (varias bandas) -->
+  <rect x="0" y="600" width="1600" height="300" fill="url(#haze)" opacity="0.8" filter="url(#soft)"/>
+  <rect x="-100" y="560" width="1800" height="120" fill="url(#mistBand)" opacity="0.7" filter="url(#soft)"/>
+  <rect x="-100" y="640" width="1800" height="120" fill="url(#mistBand)" opacity="0.55" filter="url(#soft)"/>
+
+  <!-- Árbol de la vida -->
+  <g>
+    <circle cx="800" cy="430" r="360" fill="url(#canopyGlow)"/>
+
+    <!-- rim light detrás del follaje -->
+    <g fill="none" stroke="#ffdf9e" stroke-width="6" opacity="0.5" filter="url(#edge)">
+      <ellipse cx="800" cy="400" rx="232" ry="172"/>
+      <ellipse cx="800" cy="320" rx="152" ry="122"/>
+    </g>
+
+    <!-- tronco y raíces -->
+    <path d="M792 862
+             C 774 800 768 738 780 688
+             C 694 700 652 742 604 744
+             C 660 704 720 682 786 664
+             C 780 616 786 556 800 516
+             C 814 556 820 616 814 664
+             C 880 682 940 704 996 744
+             C 948 742 906 700 820 688
+             C 832 738 826 800 808 862 Z"
+          fill="#332937"/>
+    <!-- rim light cálido en el borde del tronco -->
+    <path d="M814 664 C 880 682 940 704 996 744" fill="none" stroke="#f6c987" stroke-width="4" opacity="0.55" filter="url(#edge)"/>
+    <path d="M800 516 C 814 556 820 616 814 664" fill="none" stroke="#f6c987" stroke-width="4" opacity="0.5" filter="url(#edge)"/>
+
+    <!-- vid enroscada en el tronco -->
+    <path d="M770 690 C 812 676 834 706 812 736 C 786 762 760 742 776 720
+             C 804 706 822 726 806 744" fill="none" stroke="#241b26" stroke-width="7" stroke-linecap="round"/>
+    <path d="M778 636 C 820 624 838 654 818 682 M792 590 C 826 582 840 604 826 626"
+          fill="none" stroke="#241b26" stroke-width="6" stroke-linecap="round" opacity="0.9"/>
+
+    <!-- ramas -->
+    <g stroke="#332937" stroke-width="9" fill="none" stroke-linecap="round">
+      <path d="M800 560 C 770 500 700 470 650 430"/>
+      <path d="M800 560 C 830 500 900 470 950 430"/>
+      <path d="M800 540 C 795 470 790 420 800 360"/>
+      <path d="M760 500 C 720 460 690 440 660 400"/>
+      <path d="M840 500 C 880 460 910 440 940 400"/>
+      <path d="M800 470 C 760 430 740 410 720 380"/>
+      <path d="M800 470 C 840 430 860 410 880 380"/>
+    </g>
+
+    <!-- follaje -->
+    <g fill="#2b2430" opacity="0.94">
+      <ellipse cx="800" cy="400" rx="230" ry="170"/>
+      <ellipse cx="650" cy="440" rx="122" ry="102"/>
+      <ellipse cx="950" cy="440" rx="122" ry="102"/>
+      <ellipse cx="800" cy="318" rx="152" ry="122"/>
+      <ellipse cx="700" cy="360" rx="90" ry="80"/>
+      <ellipse cx="900" cy="360" rx="90" ry="80"/>
+    </g>
+
+    <!-- luz filtrándose entre las hojas -->
+    <g fill="#ffe7ad">
+      <circle cx="720" cy="360" r="3.2"/><circle cx="770" cy="330" r="2.6"/>
+      <circle cx="830" cy="350" r="3.4"/><circle cx="880" cy="380" r="2.8"/>
+      <circle cx="680" cy="430" r="2.6"/><circle cx="920" cy="430" r="3.2"/>
+      <circle cx="800" cy="300" r="3"/><circle cx="760" cy="420" r="2.4"/>
+      <circle cx="850" cy="300" r="2.6"/><circle cx="800" cy="440" r="3.2"/>
+      <circle cx="710" cy="470" r="2.4"/><circle cx="900" cy="470" r="2.6"/>
+      <circle cx="640" cy="410" r="2.2"/><circle cx="960" cy="410" r="2.2"/>
+    </g>
+    <g fill="#fff3d0" opacity="0.9">
+      <circle cx="795" cy="360" r="1.8"/><circle cx="740" cy="390" r="1.6"/>
+      <circle cx="860" cy="395" r="1.6"/><circle cx="815" cy="330" r="1.6"/>
+    </g>
+  </g>
+
+  <!-- Peñasco izquierdo con lobo aullando -->
+  <path d="M0 900 L0 706 C 90 686 195 714 258 762 C 306 800 344 858 366 900 Z" fill="#211a26"/>
+  <g fill="#0f0b14">
+    <path d="M64 730 l26 66 -52 0 Z M64 686 l22 56 -44 0 Z"/>
+    <path d="M148 762 l28 72 -56 0 Z M148 714 l24 60 -48 0 Z"/>
+    <path d="M236 786
+             c 6 -10 4 -26 10 -34 c 4 -6 2 -18 8 -22 c 6 8 6 20 4 30
+             c 8 -2 14 4 16 12 c 10 2 18 10 20 22 c 2 12 -2 24 -8 30
+             c 6 6 4 16 -2 20 c -6 -2 -8 -12 -8 -20 c -12 4 -26 4 -38 -2
+             c -8 6 -16 4 -18 -4 c -2 -10 4 -22 6 -30 Z"/>
+  </g>
+
+  <!-- Peñasco derecho con ciervo -->
+  <path d="M1600 900 L1600 726 C 1498 706 1394 730 1322 778 C 1280 806 1250 858 1236 900 Z" fill="#211a26"/>
+  <g fill="#0f0b14">
+    <path d="M1548 748 l26 66 -52 0 Z M1548 704 l22 56 -44 0 Z"/>
+    <g>
+      <path d="M1360 800 c 8 -4 20 -4 28 0 l 0 34 6 0 0 -34 c 10 -2 22 2 30 10
+               c 10 -2 22 4 24 14 c -6 4 -14 2 -20 -2 l 0 30 6 0 c 0 8 -12 8 -12 0
+               l 0 -26 -46 0 0 26 c 0 8 -12 8 -12 0 l 0 -30
+               c -8 2 -16 -2 -18 -10 c 4 -8 12 -12 20 -12 Z"/>
+      <path d="M1414 782 c 4 -10 14 -14 24 -12 c 4 -8 4 -18 2 -26 c 8 6 12 16 12 26
+               c 2 8 -2 16 -8 20 c -8 6 -20 6 -28 0 Z"/>
+      <g stroke="#0f0b14" stroke-width="4" fill="none" stroke-linecap="round">
+        <path d="M1444 762 c 2 -16 -4 -30 -2 -44 M1442 736 c -8 -4 -14 -12 -14 -22 M1444 726 c 6 -6 14 -8 22 -8"/>
+        <path d="M1452 764 c 6 -14 4 -30 8 -42 M1460 740 c 8 -2 16 -10 18 -20 M1458 728 c -4 -8 -4 -16 -2 -24"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- Águila en vuelo -->
+  <g fill="#241d29" transform="translate(300 245) scale(1.12)">
+    <path d="M0 0 C -34 -20 -60 -20 -78 -8 C -58 -6 -40 2 -28 12 C -44 8 -58 10 -66 18
+             C -50 16 -34 18 -22 22 C -12 18 -4 12 0 6 C 4 12 12 18 22 22
+             C 34 18 50 16 66 18 C 58 10 44 8 28 12 C 40 2 58 -6 78 -8
+             C 60 -20 34 -20 0 0 Z"/>
+  </g>
+
+  <!-- Chispas flotantes -->
+  <g fill="#ffe9b8">
+    <circle cx="470" cy="290" r="2.6"/><circle cx="1120" cy="350" r="3"/>
+    <circle cx="560" cy="520" r="2.2"/><circle cx="1050" cy="540" r="2.6"/>
+    <circle cx="380" cy="460" r="2.2"/><circle cx="1200" cy="470" r="2.4"/>
+    <circle cx="990" cy="290" r="2.2"/><circle cx="620" cy="350" r="2"/>
+    <circle cx="1290" cy="360" r="2"/><circle cx="330" cy="360" r="2"/>
+  </g>
+</svg>

@@ -17,20 +17,31 @@ export function Hero() {
         aria-hidden="true"
         className="absolute inset-0 animate-drift bg-[radial-gradient(70%_55%_at_50%_88%,rgba(255,233,176,0.95)_0%,rgba(246,197,110,0.55)_22%,rgba(233,166,63,0)_55%),linear-gradient(to_top,#f2c877_0%,#e6a758_12%,#cf8f6e_28%,#b78f8f_44%,#9d86a6_60%,#85789c_76%,#5b5478_100%)]"
       />
-      {/* Obra real (si está disponible) con mezcla suave */}
+      {/* Ilustración de marca: árbol de la vida al amanecer (asset propio) */}
       <div
         aria-hidden="true"
-        className="absolute inset-0 bg-cover bg-center opacity-90 [background-image:url('/images/hero.jpg')]"
+        className="absolute inset-0 bg-cover bg-center [background-image:url('/images/hero.svg')]"
       />
-      {/* Halo de luz central (el sol naciente / la chispa) */}
+      {/* Obra final (opcional): al agregar public/images/hero.jpg, se superpone
+          automáticamente; si no existe, se muestra la ilustración de arriba. */}
       <div
         aria-hidden="true"
-        className="absolute bottom-[4%] left-1/2 h-[52vh] w-[52vh] -translate-x-1/2 rounded-full bg-glow-200/50 blur-[120px]"
+        className="absolute inset-0 bg-cover bg-center [background-image:url('/images/hero.jpg')]"
       />
-      {/* Viñeta para legibilidad del texto y transición hacia la noche */}
+      {/* Viñeta radial para legibilidad del texto */}
       <div
         aria-hidden="true"
-        className="absolute inset-0 bg-gradient-to-b from-night-950/45 via-night-950/[0.02] to-night-950/95"
+        className="absolute inset-0 [background:radial-gradient(70%_55%_at_50%_44%,rgba(10,14,24,0.34)_0%,rgba(10,14,24,0)_60%)]"
+      />
+      {/* Acople cinematográfico: gradiente que funde el hero con la página */}
+      <div
+        aria-hidden="true"
+        className="absolute inset-0 bg-gradient-to-b from-night-950/55 via-transparent to-night-950"
+      />
+      {/* Fundido inferior extendido hacia la sección siguiente */}
+      <div
+        aria-hidden="true"
+        className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-b from-transparent to-night-950"
       />
 
       {/* Chispas flotantes */}
