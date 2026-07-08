@@ -23,10 +23,11 @@ export function Hero() {
         className="absolute inset-0 bg-cover bg-center [background-image:url('/images/hero.svg')]"
       />
       {/* Obra final (opcional): al agregar public/images/hero.jpg, se superpone
-          automáticamente; si no existe, se muestra la ilustración de arriba. */}
+          automáticamente; si no existe, se muestra la ilustración de arriba.
+          Se reencuadra hacia abajo para no duplicar el wordmark del nav. */}
       <div
         aria-hidden="true"
-        className="absolute inset-0 bg-cover bg-center [background-image:url('/images/hero.jpg')]"
+        className="absolute inset-0 bg-cover bg-no-repeat [background-image:url('/images/hero.jpg')] [background-position:center_72%]"
       />
       {/* Viñeta radial para legibilidad del texto */}
       <div
@@ -56,26 +57,29 @@ export function Hero() {
           Música · Arte · Tecnología
         </p>
         <h1
-          className="animate-rise mt-6 font-serif text-5xl leading-[1.05] text-white drop-shadow-[0_2px_30px_rgba(0,0,0,0.5)] sm:text-6xl lg:text-7xl"
+          className="animate-rise mt-6 font-display text-6xl font-semibold uppercase leading-[0.98] tracking-[0.06em] text-white drop-shadow-[0_2px_36px_rgba(0,0,0,0.6)] sm:text-7xl lg:text-8xl"
           style={{ animationDelay: "0.25s" }}
         >
-          Llevamos luz
-          <br />
-          al mundo a través
-          <br />
-          <span className="text-glow-300">del arte</span>
+          Saltus Works
         </h1>
         <p
-          className="animate-rise mx-auto mt-7 max-w-2xl text-lg leading-relaxed text-night-100/90 sm:text-xl"
+          className="animate-rise mt-6 font-serif text-2xl leading-snug text-night-100 drop-shadow-[0_2px_20px_rgba(0,0,0,0.5)] sm:text-3xl lg:text-4xl"
           style={{ animationDelay: "0.4s" }}
         >
-          Saltus Works une música, arte y tecnología al servicio del bienestar,
-          la salud y la sostenibilidad. Defendemos el valor del arte y de los
-          artistas como motor de transformación social.
+          Llevamos luz al mundo a través{" "}
+          <span className="text-glow-300">del arte</span>
+        </p>
+        <p
+          className="animate-rise mx-auto mt-6 max-w-2xl text-base leading-relaxed text-night-100/90 sm:text-lg"
+          style={{ animationDelay: "0.55s" }}
+        >
+          Unimos música, arte y tecnología al servicio del bienestar, la salud y
+          la sostenibilidad. Defendemos el valor del arte y de los artistas como
+          motor de transformación social.
         </p>
         <div
           className="animate-rise mt-10 flex flex-wrap items-center justify-center gap-4"
-          style={{ animationDelay: "0.55s" }}
+          style={{ animationDelay: "0.7s" }}
         >
           <Link
             href="/sobre"
