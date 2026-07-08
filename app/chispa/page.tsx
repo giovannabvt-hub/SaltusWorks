@@ -23,7 +23,7 @@ export default function ChispaPage() {
       <PageHeader
         eyebrow="CHISPA · Arte, Vida y Sanación"
         title="El arte no es un lujo. Es una necesidad humana."
-        intro="CHISPA es una organización de arte y bienestar que trabaja en la intersección de la expresión creativa, la solidaridad comunitaria y el cuidado de la salud. Lleva el arte a quienes atraviesan la enfermedad, nunca más necesario que cuando la vida se encuentra más amenazada."
+        intro="CHISPA es una organización de arte y bienestar que trabaja en la intersección de la expresión creativa, la solidaridad comunitaria y el cuidado de la salud. Acerca el arte a cualquier persona que lo necesite, para mejorar su salud o acompañar el momento que esté atravesando, sea cual sea."
       />
 
       {/* Manifiesto / cita */}
@@ -31,11 +31,10 @@ export default function ChispaPage() {
         <Reveal className="mx-auto max-w-4xl text-center">
           <Spark className="mx-auto h-8 w-8 text-glow-300" animated />
           <blockquote className="mt-8 font-serif text-2xl leading-snug text-white sm:text-3xl lg:text-4xl">
-            “El acto más político que podemos cometer es hacer visible nuestra
-            humanidad completa, especialmente cuando el mundo intenta borrarla.”
+            “El arte es, sobre todo, un estado del alma.”
           </blockquote>
           <p className="mt-6 text-sm uppercase tracking-[0.2em] text-night-400">
-            Inspirado en Kazuo Ishiguro y en la filosofía de Patch Adams
+            Marc Chagall
           </p>
         </Reveal>
       </Section>
@@ -55,13 +54,12 @@ export default function ChispaPage() {
               de cada persona.
             </p>
             <p>
-              El nombre <span className="text-glow-200">CHISPA</span> nace en
-              honor a <span className="text-glow-200">Elías</span>, un artista
-              que marcó la vida de muchos y que falleció de cáncer. Es también esa
-              pequeña luz irreducible que permanece cuando todo lo demás ha sido
-              despojado.{" "}
+              El nombre <span className="text-glow-200">CHISPA</span> es un
+              homenaje a <span className="text-glow-200">Elías</span>, un artista
+              y amigo cuya alma creó arte que lo mantiene vivo para siempre. Es
+              también esa pequeña luz que permanece cuando todo lo demás se apaga.{" "}
               <span className="text-night-100">
-                Esa chispa es lo que venimos a proteger.
+                Esa chispa es lo que venimos a cuidar.
               </span>
             </p>
           </Reveal>
@@ -80,11 +78,11 @@ export default function ChispaPage() {
               El arte como prueba de existencia
             </h3>
             <p className="mt-4 text-[15px] leading-relaxed text-night-200">
-              Inspirados en <em>Never Let Me Go</em> de Kazuo Ishiguro, creemos
-              que crear algo propio —un cuadro, un poema, una melodía— es el acto
-              de afirmar la propia humanidad frente a un diagnóstico que amenaza
-              con reducir a la persona a un cuerpo o un expediente. Es decir: soy
-              más que esto. Estuve aquí. Esto es lo que hice mientras estaba aquí.
+              Crear algo propio —un cuadro, un poema, una melodía— es afirmar la
+              propia humanidad frente a un diagnóstico o un momento difícil que
+              amenaza con reducir a la persona a un cuerpo o un expediente. Es una
+              forma de decir: soy más que esto. Estuve aquí. Esto es lo que hice
+              mientras estaba aquí.
             </p>
           </Reveal>
           <Reveal
@@ -92,14 +90,13 @@ export default function ChispaPage() {
             className="rounded-2xl border border-white/8 bg-white/[0.02] p-8"
           >
             <h3 className="font-serif text-2xl text-white">
-              La alegría como acto clínico
+              La alegría como forma de cuidado
             </h3>
             <p className="mt-4 text-[15px] leading-relaxed text-night-200">
-              Siguiendo a Hunter “Patch” Adams, entendemos que el humor, el juego
-              y la conexión humana no son un complemento de la sanación: son parte
-              de ella. Nuestros artistas no ofrecen distracción: son
-              profesionales formados para sostener un espacio donde conviven la
-              vulnerabilidad, el dolor, la risa y la dignidad.
+              El humor, el juego y la conexión humana no son un complemento de la
+              sanación: son parte de ella. Nuestros artistas no ofrecen
+              distracción; son profesionales formados para sostener un espacio
+              donde conviven la vulnerabilidad, el dolor, la risa y la dignidad.
             </p>
           </Reveal>
         </div>
@@ -125,13 +122,13 @@ export default function ChispaPage() {
           />
           <Pillar
             delay={120}
-            title="2 · Los pacientes crean: el Archivo del Legado"
-            description="Cada persona tiene la oportunidad, nunca la obligación, de crear algo propio. Sus obras se conservan y se comparten en la Colección CHISPA: un testimonio colectivo de la creatividad humana en circunstancias difíciles."
+            title="2 · Las personas crean: el Archivo del Legado"
+            description="Cada persona tiene la oportunidad, nunca la obligación, de crear algo propio. El proceso es en sí mismo acompañamiento y terapia; y lo creado permanece. No es solo huella y legado: es también cuidado en el presente. Las obras se conservan y se comparten en la Colección CHISPA, un testimonio colectivo de la creatividad humana."
           />
           <Pillar
             delay={240}
-            title="3 · Los artistas recaudan para los pacientes"
-            description="Músicos y artistas crean y actúan para financiar los programas en hospitales e instituciones. Un ciclo virtuoso: los artistas ganan propósito, los pacientes ganan acceso y los financiadores ganan impacto visible y verificable."
+            title="3 · Los artistas sostienen los programas"
+            description="Músicos y artistas crean y actúan para financiar los programas, y pueden sumar su obra a los proyectos publicados en The Lighthouse. Un ciclo virtuoso: los artistas ganan propósito, las personas ganan acceso y quienes apoyan obtienen un impacto visible y verificable."
           />
         </div>
       </Section>
@@ -140,7 +137,7 @@ export default function ChispaPage() {
       <Section>
         <SectionTitle
           eyebrow="El arte como herramienta de salud"
-          title="No nos apoyamos en buenas intenciones, sino en evidencia"
+          title="Nos apoyamos en evidencia"
           intro="Cada elemento de nuestro modelo está respaldado por investigación clínica publicada en revistas médicas de referencia internacional."
         />
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">

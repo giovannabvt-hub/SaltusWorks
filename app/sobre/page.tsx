@@ -37,8 +37,8 @@ export default function SobrePage() {
               esa misión a la práctica: <span className="text-glow-200">The Lighthouse</span>,
               un ecosistema educativo que usa la música como llave para descubrir
               el mundo, y <span className="text-glow-200">CHISPA</span>, una
-              organización de arte y salud que acompaña a personas que atraviesan
-              la enfermedad.
+              organización de arte y salud que acompaña a las personas a través
+              del arte.
             </p>
             <p>
               Todo lo que hacemos se sostiene sobre el modelo de{" "}
