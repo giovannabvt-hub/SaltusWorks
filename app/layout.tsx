@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Cinzel, Cormorant_Garamond, Inter } from "next/font/google";
+import { Cormorant_Garamond, Inter, Libre_Caslon_Text } from "next/font/google";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { site } from "@/lib/site";
@@ -18,10 +18,11 @@ const inter = Inter({
   display: "swap",
 });
 
-const cinzel = Cinzel({
+const libreCaslon = Libre_Caslon_Text({
   subsets: ["latin"],
-  weight: ["500", "600", "700"],
-  variable: "--font-cinzel",
+  weight: ["400", "700"],
+  style: ["normal", "italic"],
+  variable: "--font-caslon",
   display: "swap",
 });
 
@@ -74,7 +75,7 @@ export default function RootLayout({
   return (
     <html
       lang="es"
-      className={`${cormorant.variable} ${inter.variable} ${cinzel.variable}`}
+      className={`${cormorant.variable} ${inter.variable} ${libreCaslon.variable}`}
     >
       <body className="min-h-screen antialiased">
         <a

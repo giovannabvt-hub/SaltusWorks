@@ -57,7 +57,7 @@ export function Hero() {
           Música · Arte · Tecnología
         </p>
         <h1
-          className="animate-rise mt-6 font-display text-6xl font-semibold uppercase leading-[0.98] tracking-[0.06em] text-white drop-shadow-[0_2px_36px_rgba(0,0,0,0.6)] sm:text-7xl lg:text-8xl"
+          className="animate-rise mt-6 whitespace-nowrap font-display font-bold leading-none text-white drop-shadow-[0_2px_36px_rgba(0,0,0,0.6)] [font-size:clamp(40px,10vw,116px)] [font-variant:small-caps] [letter-spacing:0.02em]"
           style={{ animationDelay: "0.25s" }}
         >
           Saltus Works

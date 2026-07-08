@@ -34,7 +34,7 @@
   /* Tipografía */
   --font-serif: var(--font-cormorant), Georgia, "Times New Roman", serif;
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
-  --font-display: var(--font-cinzel), "Trajan Pro", Georgia, serif;
+  --font-display: var(--font-caslon), "Big Caslon", "Hoefler Text", Georgia, serif;
 
   /* Animaciones */
   --animate-spark: spark 4s ease-in-out infinite;
