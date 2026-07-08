@@ -11,25 +11,26 @@ import { Spark } from "./Spark";
 export function Hero() {
   return (
     <section className="relative flex min-h-[100svh] items-center justify-center overflow-hidden">
-      {/* Capa base: cielo cálido al amanecer */}
+      {/* Capa base: amanecer sobre el árbol de la vida
+          (sol dorado abajo, nubes lavanda/malva arriba, neblina) */}
       <div
         aria-hidden="true"
-        className="absolute inset-0 animate-drift bg-[radial-gradient(120%_90%_at_50%_100%,#f4d99b_0%,#e6a23c_14%,#bd6318_30%,#7a3a19_48%,#212a3c_70%,#0b0f1a_100%)]"
+        className="absolute inset-0 animate-drift bg-[radial-gradient(70%_55%_at_50%_88%,rgba(255,233,176,0.95)_0%,rgba(246,197,110,0.55)_22%,rgba(233,166,63,0)_55%),linear-gradient(to_top,#f2c877_0%,#e6a758_12%,#cf8f6e_28%,#b78f8f_44%,#9d86a6_60%,#85789c_76%,#5b5478_100%)]"
       />
       {/* Obra real (si está disponible) con mezcla suave */}
       <div
         aria-hidden="true"
         className="absolute inset-0 bg-cover bg-center opacity-90 [background-image:url('/images/hero.jpg')]"
       />
-      {/* Halo de luz central (el faro / la chispa) */}
+      {/* Halo de luz central (el sol naciente / la chispa) */}
       <div
         aria-hidden="true"
-        className="absolute bottom-[8%] left-1/2 h-[45vh] w-[45vh] -translate-x-1/2 rounded-full bg-glow-200/40 blur-[120px]"
+        className="absolute bottom-[4%] left-1/2 h-[52vh] w-[52vh] -translate-x-1/2 rounded-full bg-glow-200/50 blur-[120px]"
       />
-      {/* Viñeta para legibilidad del texto */}
+      {/* Viñeta para legibilidad del texto y transición hacia la noche */}
       <div
         aria-hidden="true"
-        className="absolute inset-0 bg-gradient-to-b from-night-950/70 via-night-950/10 to-night-950/85"
+        className="absolute inset-0 bg-gradient-to-b from-night-950/45 via-night-950/[0.02] to-night-950/95"
       />
 
       {/* Chispas flotantes */}

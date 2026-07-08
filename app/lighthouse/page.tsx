@@ -13,7 +13,7 @@ import { Reveal } from "@/components/Reveal";
 export const metadata: Metadata = {
   title: "The Lighthouse App",
   description:
-    "The Lighthouse App integra música, exploración cultural y legado digital. Un faro que conecta a las personas con el arte y con la misión de Saltus Works.",
+    "The Lighthouse App integra música, exploración cultural y legado digital para conectar a las personas con el arte y con la misión de Saltus Works.",
 };
 
 export default function LighthousePage() {
@@ -21,7 +21,7 @@ export default function LighthousePage() {
     <>
       <PageHeader
         eyebrow="The Lighthouse App"
-        title="Un faro entre la música, la cultura y la memoria"
+        title="Un puente entre la música, la cultura y la memoria"
         intro="Lighthouse es la herramienta digital de Saltus Works: integra música, exploración cultural y legado digital en una sola experiencia luminosa."
       />
 
@@ -69,8 +69,8 @@ export default function LighthousePage() {
               accesible y significativa.
             </p>
             <p>
-              La app es ese faro: una luz que guía hacia el arte cuando más se
-              lo necesita, y que a la vez da visibilidad y sostenibilidad al
+              La app es esa raíz común: acerca el arte a las personas cuando más
+              lo necesitan y, a la vez, da visibilidad y sostenibilidad al
               trabajo de los artistas.
             </p>
           </Reveal>

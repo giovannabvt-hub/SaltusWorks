@@ -82,7 +82,7 @@ export default function HomePage() {
           <ProjectCard
             kicker="Herramienta digital"
             title="The Lighthouse App"
-            description="Una app que integra música, exploración cultural y legado digital. Un faro que guía, conecta y preserva aquello que nos hace humanos."
+            description="Una app que integra música, exploración cultural y legado digital: como un árbol que hunde raíces y extiende ramas, conecta y preserva aquello que nos hace humanos."
             href="/lighthouse"
             cta="Conocer Lighthouse"
             accent="glow"
