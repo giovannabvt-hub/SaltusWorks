@@ -4,7 +4,6 @@ import {
   SectionTitle,
   PageHeader,
   Pillar,
-  Placeholder,
   CTASection,
 } from "@/components/ui";
 import { Reveal } from "@/components/Reveal";
@@ -13,7 +12,7 @@ import { Spark } from "@/components/Spark";
 export const metadata: Metadata = {
   title: "Sobre nosotros",
   description:
-    "Misión, visión y filosofía de Saltus Works: por qué el arte importa y cómo la música, el arte y la tecnología transforman la salud, el bienestar y la sostenibilidad.",
+    "Saltus Works es la organización creada por Rosario para poner la música, el arte y la tecnología al servicio del bienestar, la salud y la sostenibilidad. Conocé su misión, su filosofía y sus tres pilares.",
 };
 
 export default function SobrePage() {
@@ -22,11 +21,38 @@ export default function SobrePage() {
       <PageHeader
         eyebrow="Sobre Saltus Works"
         title="Creemos en el arte como fuerza que transforma vidas"
-        intro="Nacimos en Argentina con una convicción simple y ambiciosa: el arte y los artistas pueden mejorar la calidad de vida de las personas y llevar luz al mundo."
+        intro="Saltus Works es la organización que crea y aloja The Lighthouse y CHISPA. Nace de una convicción simple y ambiciosa: el arte y los artistas pueden mejorar la calidad de vida de las personas y llevar luz al mundo."
       />
 
-      {/* Misión y visión */}
+      {/* La compañía */}
       <Section>
+        <div className="grid gap-12 lg:grid-cols-[1fr_1.15fr] lg:gap-20">
+          <SectionTitle eyebrow="La compañía" title="Una casa para el arte con propósito" />
+          <Reveal className="space-y-5 text-lg leading-relaxed text-night-200">
+            <p>
+              Saltus Works trabaja en la intersección de{" "}
+              <span className="text-glow-200">música, arte y tecnología</span>,
+              al servicio del bienestar, la salud y los objetivos de
+              sostenibilidad. Bajo su paraguas conviven dos proyectos que llevan
+              esa misión a la práctica: <span className="text-glow-200">The Lighthouse</span>,
+              un ecosistema educativo que usa la música como llave para descubrir
+              el mundo, y <span className="text-glow-200">CHISPA</span>, una
+              organización de arte y salud que acompaña a personas que atraviesan
+              la enfermedad.
+            </p>
+            <p>
+              Todo lo que hacemos se sostiene sobre el modelo de{" "}
+              <span className="text-glow-200">Triple Bottom Line</span>:
+              buscamos equilibrar el valor artístico, el social y el económico,
+              para que el arte no solo emocione, sino que también sane, conecte y
+              se sostenga en el tiempo.
+            </p>
+          </Reveal>
+        </div>
+      </Section>
+
+      {/* Misión y visión */}
+      <Section className="border-y border-white/5 bg-white/[0.015]">
         <div className="grid gap-10 md:grid-cols-2">
           <Reveal className="rounded-2xl border border-white/8 bg-white/[0.02] p-8">
             <Spark className="h-6 w-6 text-glow-300" animated />
@@ -53,7 +79,7 @@ export default function SobrePage() {
       </Section>
 
       {/* Manifiesto: por qué el arte importa */}
-      <Section className="border-y border-white/5 bg-white/[0.015]">
+      <Section>
         <div className="grid gap-12 lg:grid-cols-[1fr_1.2fr] lg:gap-20">
           <SectionTitle
             eyebrow="Nuestra filosofía"
@@ -64,7 +90,7 @@ export default function SobrePage() {
               El arte es una de las formas más antiguas y universales de cuidar
               a otros. Antes que industria o entretenimiento, fue ritual,
               acompañamiento y memoria. Nos ayuda a atravesar el dolor, a
-              celebrar, a recordar quiénes somos.
+              celebrar y a recordar quiénes somos.
             </p>
             <p>
               Sin embargo, el trabajo de los artistas suele quedar
@@ -85,7 +111,7 @@ export default function SobrePage() {
       </Section>
 
       {/* Los tres pilares */}
-      <Section>
+      <Section className="border-y border-white/5 bg-white/[0.015]">
         <SectionTitle
           eyebrow="Nuestros pilares"
           title="Cómo pensamos cada proyecto"
@@ -110,31 +136,46 @@ export default function SobrePage() {
         </div>
       </Section>
 
-      {/* Equipo (placeholder) */}
-      <Section className="border-t border-white/5">
-        <SectionTitle
-          eyebrow="Equipo"
-          title="Las personas detrás de la luz"
-          intro="Un equipo interdisciplinario de artistas, profesionales de la salud y tecnólogos. Pronto vas a poder conocer a cada una de ellas aquí."
-        />
-        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {["Dirección", "Arte y salud", "Tecnología"].map((rol, i) => (
-            <Reveal
-              key={rol}
-              delay={i * 100}
-              className="rounded-2xl border border-white/8 bg-white/[0.02] p-6"
-            >
-              <Placeholder label="Foto próximamente" aspect="aspect-square" />
-              <h3 className="mt-5 font-serif text-xl text-white">
-                Nombre Apellido
-              </h3>
-              <p className="text-sm text-glow-300">{rol}</p>
-              <p className="mt-2 text-sm leading-relaxed text-night-200">
-                Breve biografía en construcción. Este espacio está reservado
-                para presentar a cada integrante del equipo.
-              </p>
-            </Reveal>
-          ))}
+      {/* Fundadora */}
+      <Section>
+        <SectionTitle eyebrow="Fundadora" title="La visión detrás de la luz" />
+        <div className="mt-12 grid gap-10 lg:grid-cols-[0.9fr_1.4fr] lg:gap-16">
+          <Reveal className="rounded-2xl border border-white/8 bg-gradient-to-b from-white/[0.05] to-transparent p-8">
+            <Spark className="h-7 w-7 text-glow-300" animated />
+            <h3 className="mt-5 font-serif text-3xl text-white">Rosario</h3>
+            <p className="mt-1 text-sm uppercase tracking-[0.2em] text-glow-300">
+              Fundadora de Saltus Works
+            </p>
+          </Reveal>
+          <Reveal
+            delay={120}
+            className="space-y-5 text-lg leading-relaxed text-night-200"
+          >
+            <p>
+              Saltus Works nació de una historia personal. En la infancia de
+              Rosario, frente a la inseguridad y la injusticia del mundo adulto,
+              el arte se volvió un refugio donde la llama de la esperanza se
+              mantuvo encendida.
+            </p>
+            <p>
+              De adulta transformó esa certeza en propósito: si el arte fue lo
+              que la sanó y la sostuvo, podía también ser una herramienta para
+              cuidar a otros y aportar al mundo. Con esa idea creó Saltus Works
+              como una casa para proyectos que ponen el arte al servicio de la
+              vida.
+            </p>
+            <p>
+              Su trabajo se inspira en referentes que unen consciencia, ciencia
+              y sensibilidad —desde el legado de Jane Goodall y su defensa de la
+              naturaleza y la esperanza, hasta la fuerza de artistas que
+              entendieron el arte como una forma de alzar la voz.
+            </p>
+            <p className="text-night-100">
+              Detrás de Saltus Works hay, además, un equipo interdisciplinario
+              en crecimiento —artistas, profesionales de la salud y
+              tecnólogos— que pronto vas a poder conocer aquí.
+            </p>
+          </Reveal>
         </div>
       </Section>
 
