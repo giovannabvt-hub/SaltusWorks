@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+/* ============================================================
+   SALTUS Works — Sistema de diseño
+   Dualidad "oscuridad → luz": noche profunda + luz cálida.
+   ============================================================ */
+
+@theme {
+  /* Luz cálida (dorados, ámbar, terracota) */
+  --color-glow-50: #fdf8ef;
+  --color-glow-100: #faeecf;
+  --color-glow-200: #f4d99b;
+  --color-glow-300: #eec066;
+  --color-glow-400: #e6a23c;
+  --color-glow-500: #d98324;
+  --color-glow-600: #bd6318;
+  --color-glow-700: #964817;
+  --color-glow-800: #7a3a19;
+  --color-glow-900: #653118;
+
+  --color-terra-400: #d98063;
+  --color-terra-500: #c25c3d;
+
+  /* Noche profunda / carbón */
+  --color-night-950: #0b0f1a;
+  --color-night-900: #10151f;
+  --color-night-800: #171d2b;
+  --color-night-700: #212a3c;
+  --color-night-600: #313c52;
+  --color-night-400: #6b7896;
+  --color-night-200: #b9c1d3;
+  --color-night-100: #dde1ea;
+
+  /* Tipografía */
+  --font-serif: var(--font-cormorant), Georgia, "Times New Roman", serif;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+
+  /* Animaciones */
+  --animate-spark: spark 4s ease-in-out infinite;
+  --animate-drift: drift 18s ease-in-out infinite;
+  --animate-rise: rise 0.9s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes spark {
+  0%, 100% { opacity: 0.4; transform: scale(0.85); }
+  50% { opacity: 1; transform: scale(1.1); }
+}
+
+@keyframes drift {
+  0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
+  50% { transform: translate3d(0, -2%, 0) scale(1.04); }
+}
+
+@keyframes rise {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-night-950);
+  color: var(--color-night-100);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background-color: var(--color-glow-400);
+  color: var(--color-night-950);
+}
+
+/* Reveal on scroll — progressive enhancement */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal { opacity: 1; transform: none; transition: none; }
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+/* Enlaces de texto en cuerpo */
+.prose-glow a {
+  color: var(--color-glow-300);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}
