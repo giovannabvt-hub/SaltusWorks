@@ -2,7 +2,8 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [main]
+    # La rama por defecto del repo es la única desde la que Pages publica.
+    branches: [main, claude/saltus-works-website-vzy2su]
   workflow_dispatch:
 
 permissions:
