@@ -2,8 +2,9 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    # La rama por defecto del repo es la única desde la que Pages publica.
-    branches: [main, claude/saltus-works-website-vzy2su]
+    # Solo la rama por defecto publica en Pages; evitar disparar dos veces
+    # (rama por defecto + main) para que un run no cancele al otro.
+    branches: [claude/saltus-works-website-vzy2su]
   workflow_dispatch:
 
 permissions:
@@ -11,10 +12,10 @@ permissions:
   pages: write
   id-token: write
 
-# Un solo deploy concurrente
+# Un solo deploy concurrente; no cancelar el que está en curso
 concurrency:
   group: pages
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   build:
