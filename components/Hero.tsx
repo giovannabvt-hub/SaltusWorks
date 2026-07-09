@@ -52,13 +52,13 @@ export function Hero() {
       {/* Contenido */}
       <div className="relative z-10 mx-auto max-w-4xl px-6 text-center">
         <p
-          className="animate-rise text-xs font-semibold uppercase tracking-[0.35em] text-glow-200"
+          className="animate-rise text-[10px] font-semibold uppercase tracking-[0.28em] text-glow-200 sm:text-xs sm:tracking-[0.32em]"
           style={{ animationDelay: "0.1s" }}
         >
-          Música · Arte · Tecnología
+          Música · Arte · Tecnología · Bienestar · Comunidad
         </p>
         <h1
-          className="animate-rise mt-6 whitespace-nowrap font-display font-bold leading-none text-white drop-shadow-[0_2px_36px_rgba(0,0,0,0.6)] [font-size:clamp(40px,10vw,116px)] [font-variant:small-caps] [letter-spacing:0.02em]"
+          className="animate-rise mt-5 whitespace-nowrap font-display font-bold leading-none text-white drop-shadow-[0_2px_36px_rgba(0,0,0,0.6)] [font-size:clamp(30px,10.5vw,116px)] [font-variant:small-caps] [letter-spacing:0.02em]"
           style={{ animationDelay: "0.25s" }}
         >
           Saltus Works
