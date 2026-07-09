@@ -5,10 +5,8 @@ import {
   ProjectCard,
   CTASection,
   Pillar,
-  Eyebrow,
 } from "@/components/ui";
 import { Reveal } from "@/components/Reveal";
-import { Spark } from "@/components/Spark";
 
 export default function HomePage() {
   return (
@@ -31,8 +29,9 @@ export default function HomePage() {
             <p>
               En Saltus Works creemos que el arte no es un lujo: es una
               necesidad humana y una herramienta concreta de transformación.
-              La música, el teatro y las artes escénicas sanan, conectan
-              comunidades y le devuelven sentido a la vida cotidiana.
+              La música y las artes nos acompañan y pueden ayudarnos en los
+              procesos de sanación, conectan comunidades y le devuelven sentido
+              a la vida cotidiana.
             </p>
             <p>
               Trabajamos en la intersección de{" "}
@@ -61,7 +60,7 @@ export default function HomePage() {
           <Pillar
             delay={120}
             title="Salud y bienestar"
-            description="El arte como práctica terapéutica y de cuidado: musicoterapia, artes escénicas y experiencias que acompañan procesos de salud."
+            description="El arte como práctica terapéutica y de cuidado: música, sonoterapia, artes plásticas y escénicas, y experiencias que acompañan los procesos de salud."
           />
           <Pillar
             delay={240}
@@ -75,14 +74,14 @@ export default function HomePage() {
       <Section>
         <SectionTitle
           eyebrow="Qué impulsamos"
-          title="Dos proyectos, una misma luz"
+          title="Dos proyectos, un mismo fin"
           intro="Saltus Works crea y aloja dos iniciativas que llevan su misión a la práctica."
         />
         <div className="mt-14 grid gap-6 md:grid-cols-2">
           <ProjectCard
             kicker="Herramienta digital"
             title="The Lighthouse App"
-            description="Una app que integra música, exploración cultural y legado digital: como un árbol que hunde raíces y extiende ramas, conecta y preserva aquello que nos hace humanos."
+            description="Vinilos coleccionables sorpresa y una plataforma digital que difunde músicos de todo el mundo: la música como llave para descubrir culturas y dar visibilidad a artistas de cada continente."
             href="/lighthouse"
             cta="Conocer Lighthouse"
             accent="glow"
@@ -90,27 +89,13 @@ export default function HomePage() {
           <ProjectCard
             kicker="ONG de arte y salud"
             title="CHISPA"
-            description="Una organización argentina que usa el arte —música, teatro, artes escénicas— como herramienta terapéutica y de impacto social, integrada con Lighthouse."
+            description="Usa el arte de forma terapéutica y con impacto social, y le da a cada persona la posibilidad de crear y dejar su huella a través de sus proyectos."
             href="/chispa"
             cta="Conocer CHISPA"
             accent="terra"
             delay={120}
           />
         </div>
-      </Section>
-
-      {/* Cita / manifiesto breve */}
-      <Section className="border-y border-white/5 bg-white/[0.015]">
-        <Reveal className="mx-auto max-w-4xl text-center">
-          <Spark className="mx-auto h-8 w-8 text-glow-300" animated />
-          <blockquote className="mt-8 font-serif text-3xl leading-snug text-white sm:text-4xl lg:text-5xl">
-            “Donde hay oscuridad, el arte enciende una chispa. Y una sola chispa
-            alcanza para encontrar el camino.”
-          </blockquote>
-          <p className="mt-6 flex items-center justify-center gap-2 text-sm uppercase tracking-[0.2em] text-night-400">
-            <Eyebrow>Manifiesto Saltus</Eyebrow>
-          </p>
-        </Reveal>
       </Section>
 
       <CTASection
