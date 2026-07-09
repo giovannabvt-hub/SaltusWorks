@@ -3,9 +3,9 @@ export const site = {
   tagline: "Arte que lleva luz al mundo",
   description:
     "Saltus Works une música, arte y tecnología al servicio del bienestar, la salud y la sostenibilidad. Defendemos el valor del arte y de los artistas como motor de transformación social.",
-  url: "https://saltusworks.com",
+  url: "https://saltusworks.org",
   origin: "Argentina — con proyección internacional",
-  email: "hola@saltusworks.com",
+  email: "hola@saltusworks.org",
   social: {
     instagram: "https://instagram.com/saltusworks",
     linkedin: "https://linkedin.com/company/saltusworks",
