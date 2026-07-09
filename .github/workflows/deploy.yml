@@ -12,10 +12,10 @@ permissions:
   pages: write
   id-token: write
 
-# Un solo deploy concurrente; no cancelar el que está en curso
+# Un solo deploy: el más nuevo cancela a los anteriores en cola (evita atascos)
 concurrency:
   group: pages
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   build:
