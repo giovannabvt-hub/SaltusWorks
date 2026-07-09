@@ -21,41 +21,52 @@ export const metadata: Metadata = {
 export default function ChispaPage() {
   return (
     <>
-      {/* Presentación / logo de CHISPA — hero a pantalla completa */}
-      <header className="relative flex min-h-[88svh] items-end overflow-hidden">
+      {/* Presentación / logo de CHISPA — imagen limpia (el águila queda visible) */}
+      <header className="relative min-h-[90svh] overflow-hidden">
         {/* Imagen de presentación (logo) — public/images/chispa.jpg */}
         <div
           aria-hidden="true"
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: `url('${asset("/images/chispa.jpg")}'), radial-gradient(120% 90% at 50% 30%, #e9b46f33, #5b547833 55%, #0a0e18 100%)`,
+            backgroundImage: `url('${asset("/images/chispa.jpg")}'), radial-gradient(120% 90% at 50% 35%, #e9b46f33, #5b547833 55%, #0a0e18 100%)`,
           }}
         />
-        {/* Degradados para legibilidad y fundido con la página */}
+        {/* Leve oscurecido arriba (para el nav) y fundido suave al pie */}
         <div
           aria-hidden="true"
-          className="absolute inset-0 bg-gradient-to-b from-night-950/50 via-transparent to-night-950"
+          className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-night-950/55 to-transparent"
         />
         <div
           aria-hidden="true"
-          className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-b from-transparent via-night-950/60 to-night-950"
+          className="absolute inset-x-0 bottom-0 h-1/4 bg-gradient-to-b from-transparent to-night-950"
         />
-        <div className="relative mx-auto w-full max-w-6xl px-6 pb-16 sm:pb-20 lg:px-10">
-          <Reveal>
-            <Eyebrow>CHISPA · Arte, Vida y Sanación</Eyebrow>
-            <h1 className="mt-4 max-w-4xl font-serif text-4xl leading-[1.05] text-white drop-shadow-[0_2px_30px_rgba(0,0,0,0.6)] sm:text-5xl lg:text-6xl">
-              El arte no es un lujo. Es una necesidad humana.
-            </h1>
-            <p className="mt-6 max-w-2xl text-lg leading-relaxed text-night-100/90 drop-shadow-[0_2px_16px_rgba(0,0,0,0.6)]">
-              CHISPA es una organización de arte y bienestar que trabaja en la
-              intersección de la expresión creativa, la solidaridad comunitaria y
-              el cuidado de la salud. Acerca el arte a cualquier persona que lo
-              necesite, para mejorar su salud o acompañar el momento que esté
-              atravesando, sea cual sea.
-            </p>
-          </Reveal>
+        {/* Indicador de scroll */}
+        <div className="absolute bottom-7 left-1/2 z-10 -translate-x-1/2">
+          <div className="flex flex-col items-center gap-2 text-night-100/80">
+            <span className="text-[10px] uppercase tracking-[0.3em]">Scroll</span>
+            <span className="block h-9 w-px bg-gradient-to-b from-glow-200/80 to-transparent" />
+          </div>
         </div>
       </header>
+
+      {/* Título e introducción (debajo de la imagen, sin tapar el águila) */}
+      <Section className="pt-16 text-center sm:pt-20">
+        <Reveal className="mx-auto max-w-3xl">
+          <div className="flex justify-center">
+            <Eyebrow>CHISPA · Arte, Vida y Sanación</Eyebrow>
+          </div>
+          <h1 className="mt-5 font-serif text-4xl leading-tight text-white sm:text-5xl lg:text-6xl">
+            El arte no es un lujo. Es una necesidad humana.
+          </h1>
+          <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-night-200">
+            CHISPA es una organización de arte y bienestar que trabaja en la
+            intersección de la expresión creativa, la solidaridad comunitaria y
+            el cuidado de la salud. Acerca el arte a cualquier persona que lo
+            necesite, para mejorar su salud o acompañar el momento que esté
+            atravesando, sea cual sea.
+          </p>
+        </Reveal>
+      </Section>
 
       {/* Manifiesto / cita */}
       <Section>
