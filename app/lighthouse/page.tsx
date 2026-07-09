@@ -33,7 +33,7 @@ export default function LighthousePage() {
         {/* Personaje (izquierda, apoyado abajo) — public/images/lighthouse-figure.png */}
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute bottom-0 left-0 hidden h-[72%] w-[30%] max-w-[420px] bg-contain bg-left-bottom bg-no-repeat opacity-90 [mask-image:linear-gradient(to_bottom,black_82%,transparent)] md:block lg:h-[80%]"
+          className="pointer-events-none absolute bottom-0 left-[2%] hidden h-[54%] w-[22%] max-w-[300px] bg-contain bg-left-bottom bg-no-repeat opacity-90 [mask-image:linear-gradient(to_bottom,black_84%,transparent)] md:block lg:h-[62%]"
           style={{ backgroundImage: `url('${asset("/images/lighthouse-figure.png")}')` }}
         />
         {/* Faro (derecha, apoyado abajo) — public/images/lighthouse-tower.png */}
