@@ -2,14 +2,15 @@ import type { Metadata } from "next";
 import {
   Section,
   SectionTitle,
-  PageHeader,
   FeatureRow,
   Pillar,
   CTASection,
   Button,
+  Eyebrow,
 } from "@/components/ui";
 import { Reveal } from "@/components/Reveal";
 import { Spark } from "@/components/Spark";
+import { asset } from "@/lib/basePath";
 
 const LIGHTHOUSE_URL = "https://www.pharosophia.org/lighthouse-launcher.html";
 
@@ -22,11 +23,47 @@ export const metadata: Metadata = {
 export default function LighthousePage() {
   return (
     <>
-      <PageHeader
-        eyebrow="The Lighthouse"
-        title="La música como llave para descubrir el mundo"
-        intro="Un ecosistema educativo que usa la música para descubrir, aprender y conectar. Combina vinilos coleccionables sorpresa con una plataforma digital, tratando al arte como una herramienta esencial para el bienestar humano."
-      />
+      {/* Hero con dos elementos etéreos flanqueando el texto (apoyados abajo) */}
+      <header className="relative flex min-h-[82svh] items-center justify-center overflow-hidden">
+        {/* halo suave detrás del título */}
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute left-1/2 top-1/2 h-[42vh] w-[42vh] -translate-x-1/2 -translate-y-1/2 rounded-full bg-glow-400/10 blur-[120px]"
+        />
+        {/* Personaje (izquierda, apoyado abajo) — public/images/lighthouse-figure.png */}
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute bottom-0 left-0 hidden h-[72%] w-[30%] max-w-[420px] bg-contain bg-left-bottom bg-no-repeat opacity-90 [mask-image:linear-gradient(to_bottom,black_82%,transparent)] md:block lg:h-[80%]"
+          style={{ backgroundImage: `url('${asset("/images/lighthouse-figure.png")}')` }}
+        />
+        {/* Faro (derecha, apoyado abajo) — public/images/lighthouse-tower.png */}
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute bottom-0 right-0 hidden h-[86%] w-[32%] max-w-[460px] bg-contain bg-right-bottom bg-no-repeat opacity-95 [mask-image:linear-gradient(to_bottom,black_86%,transparent)] md:block lg:h-[94%]"
+          style={{ backgroundImage: `url('${asset("/images/lighthouse-tower.png")}')` }}
+        />
+        {/* fundido inferior hacia la página */}
+        <div
+          aria-hidden="true"
+          className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-b from-transparent to-night-950"
+        />
+        <div className="relative z-10 mx-auto max-w-2xl px-6 pt-24 text-center">
+          <Reveal>
+            <div className="flex justify-center">
+              <Eyebrow>The Lighthouse</Eyebrow>
+            </div>
+            <h1 className="mt-5 font-serif text-4xl leading-tight text-white drop-shadow-[0_2px_30px_rgba(0,0,0,0.6)] sm:text-5xl lg:text-6xl">
+              La música como llave para descubrir el mundo
+            </h1>
+            <p className="mx-auto mt-6 max-w-xl text-lg leading-relaxed text-night-100/90">
+              Un ecosistema educativo que usa la música para descubrir, aprender
+              y conectar. Combina vinilos coleccionables sorpresa con una
+              plataforma digital, tratando al arte como una herramienta esencial
+              para el bienestar humano.
+            </p>
+          </Reveal>
+        </div>
+      </header>
 
       {/* Qué es + redirección */}
       <Section>
