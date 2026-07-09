@@ -21,35 +21,32 @@ export const metadata: Metadata = {
 export default function ChispaPage() {
   return (
     <>
-      {/* Presentación / logo de CHISPA */}
-      <header className="relative overflow-hidden px-6 pb-16 pt-32 text-center sm:pt-40 lg:px-10">
+      {/* Presentación / logo de CHISPA — hero a pantalla completa */}
+      <header className="relative flex min-h-[88svh] items-end overflow-hidden">
+        {/* Imagen de presentación (logo) — public/images/chispa.jpg */}
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute inset-x-0 top-0 mx-auto h-80 w-80 -translate-y-1/4 rounded-full bg-glow-400/15 blur-[130px]"
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: `url('${asset("/images/chispa.jpg")}'), radial-gradient(120% 90% at 50% 30%, #e9b46f33, #5b547833 55%, #0a0e18 100%)`,
+          }}
         />
-        <div className="relative mx-auto max-w-4xl">
+        {/* Degradados para legibilidad y fundido con la página */}
+        <div
+          aria-hidden="true"
+          className="absolute inset-0 bg-gradient-to-b from-night-950/50 via-transparent to-night-950"
+        />
+        <div
+          aria-hidden="true"
+          className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-b from-transparent via-night-950/60 to-night-950"
+        />
+        <div className="relative mx-auto w-full max-w-6xl px-6 pb-16 sm:pb-20 lg:px-10">
           <Reveal>
-            {/* Imagen de presentación (logo). Se completa con
-                public/images/chispa.jpg */}
-            <div className="relative mx-auto mb-10 w-full max-w-3xl">
-              <div
-                className="mx-auto aspect-[16/9] w-full rounded-3xl border border-white/8 bg-cover bg-center shadow-[0_30px_120px_-40px_rgba(230,162,60,0.5)]"
-                style={{
-                  backgroundImage: `url('${asset("/images/chispa.jpg")}'), radial-gradient(120% 90% at 50% 30%, #e9b46f33, #5b547833 55%, #0a0e18 100%)`,
-                }}
-                role="img"
-                aria-label="CHISPA — Arte, Vida y Sanación"
-              />
-            </div>
-          </Reveal>
-          <Reveal delay={80}>
-            <div className="flex justify-center">
-              <Eyebrow>CHISPA · Arte, Vida y Sanación</Eyebrow>
-            </div>
-            <h1 className="mt-5 font-serif text-4xl leading-tight text-white sm:text-5xl lg:text-6xl">
+            <Eyebrow>CHISPA · Arte, Vida y Sanación</Eyebrow>
+            <h1 className="mt-4 max-w-4xl font-serif text-4xl leading-[1.05] text-white drop-shadow-[0_2px_30px_rgba(0,0,0,0.6)] sm:text-5xl lg:text-6xl">
               El arte no es un lujo. Es una necesidad humana.
             </h1>
-            <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-night-200">
+            <p className="mt-6 max-w-2xl text-lg leading-relaxed text-night-100/90 drop-shadow-[0_2px_16px_rgba(0,0,0,0.6)]">
               CHISPA es una organización de arte y bienestar que trabaja en la
               intersección de la expresión creativa, la solidaridad comunitaria y
               el cuidado de la salud. Acerca el arte a cualquier persona que lo
