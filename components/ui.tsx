@@ -43,7 +43,7 @@ export function SectionTitle({
   intro,
   align = "left",
 }: {
-  eyebrow?: string;
+  eyebrow?: ReactNode;
   title: ReactNode;
   intro?: ReactNode;
   align?: "left" | "center";
@@ -107,11 +107,11 @@ export function ProjectCard({
   accent = "glow",
   delay = 0,
 }: {
-  kicker: string;
-  title: string;
-  description: string;
+  kicker: ReactNode;
+  title: ReactNode;
+  description: ReactNode;
   href: string;
-  cta: string;
+  cta: ReactNode;
   accent?: "glow" | "terra";
   delay?: number;
 }) {
@@ -161,11 +161,11 @@ export function CTASection({
   primary,
   secondary,
 }: {
-  eyebrow?: string;
-  title: string;
-  intro: string;
-  primary: { href: string; label: string };
-  secondary?: { href: string; label: string };
+  eyebrow?: ReactNode;
+  title: ReactNode;
+  intro: ReactNode;
+  primary: { href: string; label: ReactNode };
+  secondary?: { href: string; label: ReactNode };
 }) {
   return (
     <Section>
@@ -199,7 +199,7 @@ export function PageHeader({
   title,
   intro,
 }: {
-  eyebrow: string;
+  eyebrow: ReactNode;
   title: ReactNode;
   intro?: ReactNode;
 }) {
@@ -234,7 +234,7 @@ export function FeatureRow({
   children,
   delay = 0,
 }: {
-  title: string;
+  title: ReactNode;
   children: ReactNode;
   delay?: number;
 }) {
@@ -286,8 +286,8 @@ export function Pillar({
   description,
   delay = 0,
 }: {
-  title: string;
-  description: string;
+  title: ReactNode;
+  description: ReactNode;
   delay?: number;
 }) {
   return (

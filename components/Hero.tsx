@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { site } from "@/lib/site";
 import { asset } from "@/lib/basePath";
+import { T } from "@/lib/i18n";
 import { Spark } from "./Spark";
 
 /**
@@ -55,7 +55,10 @@ export function Hero() {
           className="animate-rise text-[10px] font-semibold uppercase tracking-[0.28em] text-glow-200 sm:text-xs sm:tracking-[0.32em]"
           style={{ animationDelay: "0.1s" }}
         >
-          Música · Arte · Tecnología · Bienestar · Comunidad
+          <T
+            es="Música · Arte · Tecnología · Bienestar · Comunidad"
+            en="Music · Art · Technology · Wellbeing · Community"
+          />
         </p>
         <h1
           className="animate-rise mt-5 whitespace-nowrap font-display font-bold leading-none text-white drop-shadow-[0_2px_36px_rgba(0,0,0,0.6)] [font-size:clamp(30px,10.5vw,116px)] [font-variant:small-caps] [letter-spacing:0.02em]"
@@ -67,16 +70,29 @@ export function Hero() {
           className="animate-rise mt-6 font-serif text-2xl leading-snug text-night-100 drop-shadow-[0_2px_20px_rgba(0,0,0,0.5)] sm:text-3xl lg:text-4xl"
           style={{ animationDelay: "0.4s" }}
         >
-          Llevamos luz al mundo a través{" "}
-          <span className="text-glow-300">del arte</span>
+          <T
+            es={
+              <>
+                Llevamos luz al mundo a través{" "}
+                <span className="text-glow-300">del arte</span>
+              </>
+            }
+            en={
+              <>
+                We bring light to the world{" "}
+                <span className="text-glow-300">through art</span>
+              </>
+            }
+          />
         </p>
         <p
           className="animate-rise mx-auto mt-6 max-w-2xl text-base leading-relaxed text-night-100/90 sm:text-lg"
           style={{ animationDelay: "0.55s" }}
         >
-          Unimos música, arte y tecnología al servicio del bienestar, la salud y
-          la sostenibilidad. Defendemos el valor del arte y de los artistas como
-          motor de transformación social.
+          <T
+            es="Unimos música, arte y tecnología al servicio del bienestar, la salud y la sostenibilidad. Defendemos el valor del arte y de los artistas como motor de transformación social."
+            en="We bring together music, art and technology in the service of wellbeing, health and sustainability. We champion the value of art and artists as a force for social change."
+          />
         </p>
         <div
           className="animate-rise mt-10 flex flex-wrap items-center justify-center gap-4"
@@ -86,13 +102,13 @@ export function Hero() {
             href="/sobre"
             className="inline-flex items-center gap-2 rounded-full bg-glow-400 px-8 py-3.5 text-sm font-medium tracking-wide text-night-950 transition-all duration-300 hover:bg-glow-300 hover:shadow-[0_0_50px_-8px] hover:shadow-glow-400/70"
           >
-            Conocé nuestra misión
+            <T es="Conocé nuestra misión" en="Discover our mission" />
           </Link>
           <Link
             href="/chispa"
             className="inline-flex items-center gap-2 rounded-full border border-white/25 px-8 py-3.5 text-sm font-medium tracking-wide text-white backdrop-blur-sm transition-colors duration-300 hover:border-glow-400/60 hover:bg-white/5"
           >
-            Descubrí los proyectos
+            <T es="Descubrí los proyectos" en="Explore the projects" />
           </Link>
         </div>
       </div>

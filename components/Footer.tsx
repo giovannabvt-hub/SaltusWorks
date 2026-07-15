@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { nav, site } from "@/lib/site";
+import { T } from "@/lib/i18n";
 import { Logo, Spark } from "./Spark";
 
 export function Footer() {
@@ -10,17 +11,20 @@ export function Footer() {
           <div className="max-w-sm">
             <Logo />
             <p className="mt-5 text-sm leading-relaxed text-night-200">
-              {site.description}
+              <T
+                es={site.description}
+                en="Saltus Works brings together music, art and technology in the service of wellbeing, health and sustainability. We champion the value of art and artists as a force for social change."
+              />
             </p>
             <p className="mt-4 flex items-center gap-2 text-xs uppercase tracking-widest text-night-400">
               <Spark className="h-3 w-3 text-glow-400" />
-              {site.origin}
+              <T es={site.origin} en="Argentina, with international reach" />
             </p>
           </div>
 
           <div>
             <h3 className="text-xs font-semibold uppercase tracking-widest text-night-400">
-              Navegación
+              <T es="Navegación" en="Navigation" />
             </h3>
             <ul className="mt-5 space-y-3">
               {nav.map((item) => (
@@ -29,7 +33,7 @@ export function Footer() {
                     href={item.href}
                     className="text-sm text-night-200 transition-colors hover:text-glow-300"
                   >
-                    {item.label}
+                    <T es={item.label} en={item.labelEn} />
                   </Link>
                 </li>
               ))}
@@ -38,7 +42,7 @@ export function Footer() {
 
           <div>
             <h3 className="text-xs font-semibold uppercase tracking-widest text-night-400">
-              Conectar
+              <T es="Conectar" en="Connect" />
             </h3>
             <ul className="mt-5 space-y-3">
               <li>
@@ -85,12 +89,15 @@ export function Footer() {
 
         <div className="mt-14 flex flex-col items-start justify-between gap-4 border-t border-white/5 pt-8 text-xs text-night-400 sm:flex-row sm:items-center">
           <p>
-            © {new Date().getFullYear()} {site.name}. Hecho con arte, música y
-            tecnología.
+            © {new Date().getFullYear()} {site.name}.{" "}
+            <T
+              es="Hecho con arte, música y tecnología."
+              en="Made with art, music and technology."
+            />
           </p>
           <p className="flex items-center gap-2">
             <Spark className="h-3 w-3 text-glow-400" />
-            {site.tagline}
+            <T es={site.tagline} en="Art that brings light to the world" />
           </p>
         </div>
       </div>

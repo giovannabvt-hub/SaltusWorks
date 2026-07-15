@@ -3,6 +3,7 @@ import { PageHeader, Section } from "@/components/ui";
 import { Reveal } from "@/components/Reveal";
 import { ContactForm } from "@/components/ContactForm";
 import { Spark } from "@/components/Spark";
+import { T } from "@/lib/i18n";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -15,9 +16,19 @@ export default function ContactoPage() {
   return (
     <>
       <PageHeader
-        eyebrow="Contacto"
-        title="Hablemos de arte, salud y luz"
-        intro="Ya sea que quieras colaborar, donar, sumarte como artista o simplemente saber más, estamos para escucharte."
+        eyebrow={<T es="Contacto" en="Contact" />}
+        title={
+          <T
+            es="Hablemos de arte, salud y luz"
+            en="Let's talk about art, health and light"
+          />
+        }
+        intro={
+          <T
+            es="Ya sea que quieras colaborar, donar, sumarte como artista o simplemente saber más, estamos para escucharte."
+            en="Whether you want to collaborate, donate, join as an artist or simply learn more, we're here to listen."
+          />
+        }
       />
 
       <Section className="pt-4">
@@ -30,7 +41,7 @@ export default function ContactoPage() {
             <div>
               <h2 className="flex items-center gap-2 font-serif text-2xl text-white">
                 <Spark className="h-5 w-5 text-glow-300" />
-                Escribinos
+                <T es="Escribinos" en="Write to us" />
               </h2>
               <a
                 href={`mailto:${site.email}`}
@@ -42,7 +53,7 @@ export default function ContactoPage() {
 
             <div>
               <h3 className="text-sm font-semibold uppercase tracking-[0.2em] text-night-400">
-                Seguinos
+                <T es="Seguinos" en="Follow us" />
               </h3>
               <ul className="mt-4 space-y-2">
                 <li>
@@ -80,9 +91,11 @@ export default function ContactoPage() {
 
             <div>
               <h3 className="text-sm font-semibold uppercase tracking-[0.2em] text-night-400">
-                Dónde estamos
+                <T es="Dónde estamos" en="Where we are" />
               </h3>
-              <p className="mt-3 text-night-200">{site.origin}</p>
+              <p className="mt-3 text-night-200">
+                <T es={site.origin} en="Argentina, with international reach" />
+              </p>
             </div>
           </Reveal>
         </div>

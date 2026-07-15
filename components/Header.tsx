@@ -4,7 +4,9 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { nav } from "@/lib/site";
+import { T } from "@/lib/i18n";
 import { Logo } from "./Spark";
+import { LangToggle } from "./LangToggle";
 
 export function Header() {
   const pathname = usePathname();
@@ -30,7 +32,7 @@ export function Header() {
       }`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-10">
-        <Link href="/" aria-label="Saltus Works — inicio" className="shrink-0">
+        <Link href="/" aria-label="Saltus Works · inicio" className="shrink-0">
           <Logo />
         </Link>
 
@@ -48,7 +50,7 @@ export function Header() {
                     : "text-night-200 hover:text-white"
                 }`}
               >
-                {item.label}
+                <T es={item.label} en={item.labelEn} />
               </Link>
             );
           })}
@@ -56,18 +58,21 @@ export function Header() {
             href="/contacto"
             className="rounded-full border border-glow-400/40 bg-glow-400/10 px-5 py-2 text-sm font-medium text-glow-200 transition-colors hover:bg-glow-400/20 hover:text-white"
           >
-            Sumarse
+            <T es="Sumarse" en="Join us" />
           </Link>
+          <LangToggle />
         </nav>
 
-        {/* Botón menú móvil */}
-        <button
-          type="button"
-          onClick={() => setOpen((v) => !v)}
-          className="flex h-10 w-10 items-center justify-center rounded-lg text-night-100 lg:hidden"
-          aria-expanded={open}
-          aria-label={open ? "Cerrar menú" : "Abrir menú"}
-        >
+        {/* Controles móviles */}
+        <div className="flex items-center gap-2 lg:hidden">
+          <LangToggle />
+          <button
+            type="button"
+            onClick={() => setOpen((v) => !v)}
+            className="flex h-10 w-10 items-center justify-center rounded-lg text-night-100"
+            aria-expanded={open}
+            aria-label={open ? "Cerrar menú" : "Abrir menú"}
+          >
           <span className="relative block h-4 w-6">
             <span
               className={`absolute left-0 block h-0.5 w-6 bg-current transition-all ${
@@ -85,7 +90,8 @@ export function Header() {
               }`}
             />
           </span>
-        </button>
+          </button>
+        </div>
       </div>
 
       {/* Menú móvil */}
@@ -104,7 +110,7 @@ export function Header() {
                   active ? "text-glow-300" : "text-night-100"
                 }`}
               >
-                {item.label}
+                <T es={item.label} en={item.labelEn} />
               </Link>
             );
           })}

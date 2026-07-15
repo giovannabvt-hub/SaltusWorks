@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Cormorant_Garamond, Inter, Libre_Caslon_Text } from "next/font/google";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { LanguageProvider } from "@/lib/i18n";
 import { site } from "@/lib/site";
 import { asset } from "@/lib/basePath";
 import "./globals.css";
@@ -30,7 +31,7 @@ const libreCaslon = Libre_Caslon_Text({
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: `${site.name} — ${site.tagline}`,
+    default: `${site.name} · ${site.tagline}`,
     template: `%s · ${site.name}`,
   },
   description: site.description,
@@ -53,7 +54,7 @@ export const metadata: Metadata = {
     locale: "es_AR",
     url: site.url,
     siteName: site.name,
-    title: `${site.name} — ${site.tagline}`,
+    title: `${site.name} · ${site.tagline}`,
     description: site.description,
     images: [
       { url: asset("/images/hero.jpg"), width: 1200, height: 630, alt: site.name },
@@ -61,7 +62,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `${site.name} — ${site.tagline}`,
+    title: `${site.name} · ${site.tagline}`,
     description: site.description,
     images: [asset("/images/hero.jpg")],
   },
@@ -87,9 +88,11 @@ export default function RootLayout({
         >
           Saltar al contenido
         </a>
-        <Header />
-        <main id="main">{children}</main>
-        <Footer />
+        <LanguageProvider>
+          <Header />
+          <main id="main">{children}</main>
+          <Footer />
+        </LanguageProvider>
       </body>
     </html>
   );

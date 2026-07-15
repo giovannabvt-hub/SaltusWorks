@@ -7,6 +7,7 @@ import {
 } from "@/components/ui";
 import { Reveal } from "@/components/Reveal";
 import { Spark } from "@/components/Spark";
+import { T } from "@/lib/i18n";
 
 export const metadata: Metadata = {
   title: "Sobre nosotros",
@@ -18,33 +19,92 @@ export default function SobrePage() {
   return (
     <>
       <PageHeader
-        eyebrow="Sobre Saltus Works"
-        title="Creemos en el arte como fuerza que transforma vidas"
-        intro="Saltus Works es la organización que crea y aloja The Lighthouse y CHISPA. Nace de una convicción simple y ambiciosa: el arte y los artistas pueden mejorar la calidad de vida de las personas y llevar luz al mundo."
+        eyebrow={<T es="Sobre Saltus Works" en="About Saltus Works" />}
+        title={
+          <T
+            es="Creemos en el arte como fuerza que transforma vidas"
+            en="We believe in art as a force that transforms lives"
+          />
+        }
+        intro={
+          <T
+            es="Saltus Works es la organización que crea y aloja The Lighthouse y CHISPA. Nace de una convicción simple y ambiciosa: el arte y los artistas pueden mejorar la calidad de vida de las personas y llevar luz al mundo."
+            en="Saltus Works is the organization that creates and hosts The Lighthouse and CHISPA. It is born from a simple, ambitious conviction: art and artists can improve people's quality of life and bring light to the world."
+          />
+        }
       />
 
       {/* La compañía */}
       <Section>
         <div className="grid gap-12 lg:grid-cols-[1fr_1.15fr] lg:gap-20">
-          <SectionTitle eyebrow="La compañía" title="Una casa para el arte con propósito" />
+          <SectionTitle
+            eyebrow={<T es="La compañía" en="The company" />}
+            title={
+              <T
+                es="Una casa para el arte con propósito"
+                en="A home for art with purpose"
+              />
+            }
+          />
           <Reveal className="space-y-5 text-lg leading-relaxed text-night-200">
             <p>
-              Saltus Works trabaja en la intersección de{" "}
-              <span className="text-glow-200">música, arte y tecnología</span>,
-              al servicio del bienestar, la salud y los objetivos de
-              sostenibilidad. Bajo su paraguas conviven dos proyectos que llevan
-              esa misión a la práctica: <span className="text-glow-200">The Lighthouse</span>,
-              un ecosistema educativo que usa la música como llave para descubrir
-              el mundo, y <span className="text-glow-200">CHISPA</span>, una
-              organización de arte y salud que acompaña a las personas a través
-              del arte.
+              <T
+                es={
+                  <>
+                    Saltus Works trabaja en la intersección de{" "}
+                    <span className="text-glow-200">
+                      música, arte y tecnología
+                    </span>
+                    , al servicio del bienestar, la salud y los objetivos de
+                    sostenibilidad. Bajo su paraguas conviven dos proyectos que
+                    llevan esa misión a la práctica:{" "}
+                    <span className="text-glow-200">The Lighthouse</span>, un
+                    ecosistema educativo que usa la música como llave para
+                    descubrir el mundo, y{" "}
+                    <span className="text-glow-200">CHISPA</span>, una
+                    organización de arte y salud que acompaña a las personas a
+                    través del arte.
+                  </>
+                }
+                en={
+                  <>
+                    Saltus Works works at the intersection of{" "}
+                    <span className="text-glow-200">
+                      music, art and technology
+                    </span>
+                    , in the service of wellbeing, health and sustainability
+                    goals. Under its umbrella live two projects that put that
+                    mission into practice:{" "}
+                    <span className="text-glow-200">The Lighthouse</span>, an
+                    educational ecosystem that uses music as a key to discover
+                    the world, and{" "}
+                    <span className="text-glow-200">CHISPA</span>, an arts and
+                    health organization that accompanies people through art.
+                  </>
+                }
+              />
             </p>
             <p>
-              Todo lo que hacemos se sostiene sobre el modelo de{" "}
-              <span className="text-glow-200">Triple Bottom Line</span>:
-              buscamos equilibrar el valor artístico, el social y el económico,
-              para que el arte no solo emocione, sino que también sane, conecte y
-              se sostenga en el tiempo.
+              <T
+                es={
+                  <>
+                    Todo lo que hacemos se sostiene sobre el modelo de{" "}
+                    <span className="text-glow-200">Triple Bottom Line</span>:
+                    buscamos equilibrar el valor artístico, el social y el
+                    económico, para que el arte no solo emocione, sino que
+                    también sane, conecte y se sostenga en el tiempo.
+                  </>
+                }
+                en={
+                  <>
+                    Everything we do rests on the{" "}
+                    <span className="text-glow-200">Triple Bottom Line</span>{" "}
+                    model: we seek to balance artistic, social and economic
+                    value, so that art not only moves us, but also heals,
+                    connects and sustains itself over time.
+                  </>
+                }
+              />
             </p>
           </Reveal>
         </div>
@@ -55,11 +115,14 @@ export default function SobrePage() {
         <div className="grid gap-10 md:grid-cols-2">
           <Reveal className="rounded-2xl border border-white/8 bg-white/[0.02] p-8">
             <Spark className="h-6 w-6 text-glow-300" animated />
-            <h2 className="mt-4 font-serif text-2xl text-white">Misión</h2>
+            <h2 className="mt-4 font-serif text-2xl text-white">
+              <T es="Misión" en="Mission" />
+            </h2>
             <p className="mt-3 text-[15px] leading-relaxed text-night-200">
-              Poner la música, el arte y la tecnología al servicio del
-              bienestar, la salud y la sostenibilidad, defendiendo el valor del
-              arte y de los artistas como motor de transformación social.
+              <T
+                es="Poner la música, el arte y la tecnología al servicio del bienestar, la salud y la sostenibilidad, defendiendo el valor del arte y de los artistas como motor de transformación social."
+                en="To put music, art and technology in the service of wellbeing, health and sustainability, defending the value of art and artists as a force for social change."
+              />
             </p>
           </Reveal>
           <Reveal
@@ -67,11 +130,14 @@ export default function SobrePage() {
             className="rounded-2xl border border-white/8 bg-white/[0.02] p-8"
           >
             <Spark className="h-6 w-6 text-glow-300" animated />
-            <h2 className="mt-4 font-serif text-2xl text-white">Visión</h2>
+            <h2 className="mt-4 font-serif text-2xl text-white">
+              <T es="Visión" en="Vision" />
+            </h2>
             <p className="mt-3 text-[15px] leading-relaxed text-night-200">
-              Un mundo donde el arte sea reconocido como herramienta esencial de
-              salud y cohesión social, y donde los artistas tengan un lugar
-              central y sostenible en la vida de las comunidades.
+              <T
+                es="Un mundo donde el arte sea reconocido como herramienta esencial de salud y cohesión social, y donde los artistas tengan un lugar central y sostenible en la vida de las comunidades."
+                en="A world where art is recognized as an essential tool for health and social cohesion, and where artists have a central, sustainable place in the life of communities."
+              />
             </p>
           </Reveal>
         </div>
@@ -81,38 +147,73 @@ export default function SobrePage() {
       <Section>
         <div className="grid gap-12 lg:grid-cols-[1fr_1.2fr] lg:gap-20">
           <SectionTitle
-            eyebrow="Nuestra filosofía"
-            title="Por qué el arte importa"
+            eyebrow={<T es="Nuestra filosofía" en="Our philosophy" />}
+            title={<T es="Por qué el arte importa" en="Why art matters" />}
           />
           <Reveal className="prose-glow space-y-5 text-lg leading-relaxed text-night-200">
             <p>
-              El arte es una de las formas más antiguas y universales de cuidar
-              a otros. Antes que industria o entretenimiento, fue ritual,
-              acompañamiento y memoria. Nos ayuda a atravesar el dolor, a
-              celebrar y a recordar quiénes somos.
+              <T
+                es="El arte es una de las formas más antiguas y universales de cuidar a otros. Antes que industria o entretenimiento, fue ritual, acompañamiento y memoria. Nos ayuda a atravesar el dolor, a celebrar y a recordar quiénes somos."
+                en="Art is one of the oldest and most universal ways of caring for others. Before it was industry or entertainment, it was ritual, company and memory. It helps us move through pain, celebrate and remember who we are."
+              />
             </p>
             <p>
-              En Saltus Works partimos de una certeza:{" "}
-              <span className="text-glow-200">
-                los artistas son trabajadores de la salud emocional y social
-              </span>
-              , y su tarea merece reconocimiento, estructura y sostenibilidad.
+              <T
+                es={
+                  <>
+                    En Saltus Works partimos de una certeza:{" "}
+                    <span className="text-glow-200">
+                      los artistas son trabajadores de la salud emocional y
+                      social
+                    </span>
+                    , y su tarea merece reconocimiento, estructura y
+                    sostenibilidad.
+                  </>
+                }
+                en={
+                  <>
+                    At Saltus Works we start from one certainty:{" "}
+                    <span className="text-glow-200">
+                      artists are workers of emotional and social health
+                    </span>
+                    , and their work deserves recognition, structure and
+                    sustainability.
+                  </>
+                }
+              />
             </p>
             <p>
-              Por eso construimos herramientas y proyectos que amplifican su
-              alcance —sin diluir su esencia— y que conectan la creación
-              artística con quienes más la necesitan.
+              <T
+                es="Por eso construimos herramientas y proyectos que amplifican su alcance, sin diluir su esencia, y que conectan la creación artística con quienes más la necesitan."
+                en="That is why we build tools and projects that amplify their reach, without diluting their essence, and that connect artistic creation with those who need it most."
+              />
             </p>
           </Reveal>
         </div>
       </Section>
 
       <CTASection
-        eyebrow="Trabajemos juntos"
-        title="¿Compartís esta manera de ver el arte?"
-        intro="Nos encantaría conocerte. Escribinos y contanos en qué estás trabajando."
-        primary={{ href: "/contacto", label: "Escribinos" }}
-        secondary={{ href: "/chispa", label: "Ver CHISPA" }}
+        eyebrow={<T es="Trabajemos juntos" en="Let's work together" />}
+        title={
+          <T
+            es="¿Compartís esta manera de ver el arte?"
+            en="Do you share this way of seeing art?"
+          />
+        }
+        intro={
+          <T
+            es="Nos encantaría conocerte. Escribinos y contanos en qué estás trabajando."
+            en="We would love to meet you. Write to us and tell us what you are working on."
+          />
+        }
+        primary={{
+          href: "/contacto",
+          label: <T es="Escribinos" en="Write to us" />,
+        }}
+        secondary={{
+          href: "/chispa",
+          label: <T es="Ver CHISPA" en="See CHISPA" />,
+        }}
       />
     </>
   );
