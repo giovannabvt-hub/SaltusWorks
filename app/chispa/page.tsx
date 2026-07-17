@@ -8,7 +8,6 @@ import {
   Eyebrow,
 } from "@/components/ui";
 import { Reveal } from "@/components/Reveal";
-import { Spark } from "@/components/Spark";
 import { T } from "@/lib/i18n";
 import { asset } from "@/lib/basePath";
 
@@ -72,22 +71,6 @@ export default function ChispaPage() {
         </Reveal>
       </Section>
 
-      {/* Cita */}
-      <Section>
-        <Reveal className="mx-auto max-w-4xl text-center">
-          <Spark className="mx-auto h-8 w-8 text-glow-300" animated />
-          <blockquote className="mt-8 font-serif text-2xl leading-snug text-white sm:text-3xl lg:text-4xl">
-            <T
-              es="“El arte es, sobre todo, un estado del alma.”"
-              en="“Art is, above all, a state of the soul.”"
-            />
-          </blockquote>
-          <p className="mt-6 text-sm uppercase tracking-[0.2em] text-night-400">
-            Marc Chagall
-          </p>
-        </Reveal>
-      </Section>
-
       {/* Quiénes somos + Elías */}
       <Section className="border-y border-white/5 bg-white/[0.015]">
         <div className="grid gap-12 lg:grid-cols-[1fr_1.15fr] lg:gap-20">
@@ -96,15 +79,15 @@ export default function ChispaPage() {
             title={
               <T
                 es="Una luz que nadie puede apagar"
-                en="A light no one can put out"
+                en="A light no one can extinguish"
               />
             }
           />
           <Reveal className="space-y-5 text-lg leading-relaxed text-night-200">
             <p>
               <T
-                es="Reunimos a músicos, artistas visuales, poetas y performers con personas que atraviesan cualquier condición de salud, del cáncer a la salud mental. Programas humanos, con respaldo científico y respeto absoluto por cada experiencia."
-                en="We bring together musicians, visual artists, poets and performers with people facing any health condition, from cancer to mental health. Human programs, backed by science and with absolute respect for every experience."
+                es="Reunimos a músicos, artistas visuales, poetas, performers, terapeutas y científicos con personas que atraviesan cualquier condición de salud, del cáncer a la salud mental. Programas humanos, con respaldo científico y respeto absoluto por cada experiencia."
+                en="We bring together musicians, visual artists, poets, performers, therapists and scientists with people facing any health condition, from cancer to mental health. Human programs, backed by science and with absolute respect for every experience."
               />
             </p>
             <p>
@@ -163,8 +146,8 @@ export default function ChispaPage() {
             title={<T es="Semillas" en="Seeds" />}
             description={
               <T
-                es="Las semillas son quienes forman CHISPA: pacientes, artistas, hospitales, otras ONG y comunidades que se suman a crear y cuidar."
-                en="The seeds are those who make up CHISPA: patients, artists, hospitals, other NGOs and communities that join to create and care."
+                es="Las semillas son quienes forman CHISPA: pacientes, artistas, terapeutas, científicos, hospitales, otras ONG y comunidades que se suman a crear y cuidar."
+                en="The seeds are those who make up CHISPA: patients, artists, therapists, scientists, hospitals, other NGOs and communities that join to create and care."
               />
             }
           />
@@ -173,8 +156,8 @@ export default function ChispaPage() {
             title={<T es="Encuentros" en="Encounters" />}
             description={
               <T
-                es="Artistas profesionales llevan el arte a hospitales, salud mental, cuidados paliativos y centros comunitarios. No son actuaciones: son encuentros para crear junto a cada persona."
-                en="Professional artists bring art to hospitals, mental health, palliative care and community centers. These are not performances: they are encounters to create alongside each person."
+                es="Artistas profesionales llevan el arte a hospitales, salud mental, cuidados paliativos y centros comunitarios, para crear junto a cada persona."
+                en="Professional artists bring art to hospitals, mental health, palliative care and community centers, to create alongside each person."
               />
             }
           />

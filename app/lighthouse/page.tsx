@@ -161,14 +161,14 @@ export default function LighthousePage() {
           eyebrow={<T es="La plataforma" en="The platform" />}
           title={
             <T
-              es="Cinco capas para aprender a través de la música"
-              en="Five layers to learn through music"
+              es="Las capas para aprender a través de la música"
+              en="The layers to learn through music"
             />
           }
           intro={
             <T
-              es="El código de cada vinilo abre una experiencia digital estructurada en cinco espacios."
-              en="Each vinyl's code opens a digital experience structured in five spaces."
+              es="El código de cada vinilo abre una experiencia digital estructurada en varios espacios conectados."
+              en="Each vinyl's code opens a digital experience structured in several connected spaces."
             />
           }
         />
@@ -191,6 +191,12 @@ export default function LighthousePage() {
             <T
               es="Contenido educativo por categorías: biografías de artistas, datos culturales y geográficos, la ciencia del sonido y la frecuencia, y la huella ambiental de cada vinilo."
               en="Educational content by category: artist biographies, cultural and geographic facts, the science of sound and frequency, and the environmental footprint of each vinyl."
+            />
+          </FeatureRow>
+          <FeatureRow title={<T es="Sonido y Salud" en="Sound & Health" />} delay={120}>
+            <T
+              es="La sección dedicada a la música como herramienta de salud: la ciencia del sonido y la frecuencia, playlists para acompañar el descanso y el estado de ánimo, y la conexión directa con los programas de arte y salud de CHISPA."
+              en="The section devoted to music as a health tool: the science of sound and frequency, playlists to support rest and mood, and a direct link to CHISPA's arts and health programs."
             />
           </FeatureRow>
           <FeatureRow title={<T es="Contribuciones" en="Contributions" />} delay={160}>

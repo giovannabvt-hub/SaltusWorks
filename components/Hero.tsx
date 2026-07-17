@@ -56,8 +56,8 @@ export function Hero() {
           style={{ animationDelay: "0.1s" }}
         >
           <T
-            es="Música · Arte · Tecnología · Bienestar · Comunidad"
-            en="Music · Art · Technology · Wellbeing · Community"
+            es="Música · Arte · Ciencia · Tecnología · Bienestar · Comunidad"
+            en="Music · Art · Science · Technology · Wellbeing · Community"
           />
         </p>
         <h1
@@ -90,8 +90,8 @@ export function Hero() {
           style={{ animationDelay: "0.55s" }}
         >
           <T
-            es="Unimos música, arte y tecnología al servicio del bienestar, la salud y la sostenibilidad. Defendemos el valor del arte y de los artistas como motor de transformación social."
-            en="We bring together music, art and technology in the service of wellbeing, health and sustainability. We champion the value of art and artists as a force for social change."
+            es="Unimos música, arte, ciencia y tecnología al servicio del bienestar, la salud, el medio ambiente y la sostenibilidad. Defendemos el valor del arte y de los artistas como motor de transformación social."
+            en="We bring together music, art, science and technology in the service of wellbeing, health, the environment and sustainability. We champion the value of art and artists as a force for social change."
           />
         </p>
         <div

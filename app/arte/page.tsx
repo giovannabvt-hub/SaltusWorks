@@ -11,7 +11,7 @@ import { Spark } from "@/components/Spark";
 import { T } from "@/lib/i18n";
 
 export const metadata: Metadata = {
-  title: "Arte y artistas",
+  title: "Semillas",
   description:
     "Un espacio editorial de Saltus Works dedicado a difundir arte de distintos lugares y a dar voz a los artistas que transforman el mundo.",
 };
@@ -29,7 +29,7 @@ export default function ArtePage() {
   return (
     <>
       <PageHeader
-        eyebrow={<T es="Arte y artistas" en="Art & Artists" />}
+        eyebrow={<T es="Semillas" en="Seeds" />}
         title={
           <T
             es="Un espacio para el arte de todas partes"

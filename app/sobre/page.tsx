@@ -53,10 +53,10 @@ export default function SobrePage() {
                   <>
                     Saltus Works trabaja en la intersección de{" "}
                     <span className="text-glow-200">
-                      música, arte y tecnología
+                      música, arte, ciencia y tecnología
                     </span>
-                    , al servicio del bienestar, la salud y los objetivos de
-                    sostenibilidad. Bajo su paraguas conviven dos proyectos que
+                    , al servicio del bienestar, la salud, el medio ambiente y
+                    la sostenibilidad. Bajo su paraguas conviven dos proyectos que
                     llevan esa misión a la práctica:{" "}
                     <span className="text-glow-200">The Lighthouse</span>, un
                     ecosistema educativo que usa la música como llave para
@@ -70,10 +70,10 @@ export default function SobrePage() {
                   <>
                     Saltus Works works at the intersection of{" "}
                     <span className="text-glow-200">
-                      music, art and technology
+                      music, art, science and technology
                     </span>
-                    , in the service of wellbeing, health and sustainability
-                    goals. Under its umbrella live two projects that put that
+                    , in the service of wellbeing, health, the environment and
+                    sustainability. Under its umbrella live two projects that put that
                     mission into practice:{" "}
                     <span className="text-glow-200">The Lighthouse</span>, an
                     educational ecosystem that uses music as a key to discover
@@ -120,8 +120,8 @@ export default function SobrePage() {
             </h2>
             <p className="mt-3 text-[15px] leading-relaxed text-night-200">
               <T
-                es="Poner la música, el arte y la tecnología al servicio del bienestar, la salud y la sostenibilidad, defendiendo el valor del arte y de los artistas como motor de transformación social."
-                en="To put music, art and technology in the service of wellbeing, health and sustainability, defending the value of art and artists as a force for social change."
+                es="Poner la música, el arte, la ciencia y la tecnología al servicio del bienestar, la salud, el medio ambiente y la sostenibilidad, defendiendo el valor del arte y de los artistas como motor de transformación social."
+                en="To put music, art, science and technology in the service of wellbeing, health, the environment and sustainability, defending the value of art and artists as a force for social change."
               />
             </p>
           </Reveal>

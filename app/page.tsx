@@ -29,8 +29,8 @@ export default function HomePage() {
           <Reveal className="space-y-5 text-lg leading-relaxed text-night-200">
             <p>
               <T
-                es="En Saltus Works creemos que el arte no es un lujo: es una necesidad humana y una herramienta concreta de transformación. La música y las artes nos acompañan y pueden ayudarnos en los procesos de sanación, conectan comunidades y le devuelven sentido a la vida cotidiana."
-                en="At Saltus Works we believe art is not a luxury: it is a human need and a real tool for transformation. Music and the arts accompany us and can help us through healing, connect communities and give everyday life meaning again."
+                es="En Saltus Works creemos que el arte no es un lujo: es una necesidad humana y una herramienta concreta de transformación. La música y las artes nos acompañan y pueden ayudarnos en los procesos de sanación, conectan comunidades y le dan sentido a la vida cotidiana."
+                en="At Saltus Works we believe art is not a luxury: it is a human need and a real tool for transformation. Music and the arts accompany us and can help us through healing, connect communities and give everyday life meaning."
               />
             </p>
             <p>
@@ -39,9 +39,9 @@ export default function HomePage() {
                   <>
                     Trabajamos en la intersección de{" "}
                     <span className="text-glow-200">
-                      música, arte y tecnología
+                      música, arte, ciencia y tecnología
                     </span>{" "}
-                    para servir al bienestar, la salud y los objetivos de
+                    para servir al bienestar, la salud, el medio ambiente y la
                     sostenibilidad. Y lo hacemos defendiendo, ante todo, el valor
                     de quienes crean: los artistas como motor de cambio social.
                   </>
@@ -50,11 +50,12 @@ export default function HomePage() {
                   <>
                     We work at the intersection of{" "}
                     <span className="text-glow-200">
-                      music, art and technology
+                      music, art, science and technology
                     </span>{" "}
-                    to serve wellbeing, health and sustainability goals. And we
-                    do it by defending, above all, the value of those who create:
-                    artists as a force for social change.
+                    to serve wellbeing, health, the environment and
+                    sustainability. And we do it by defending, above all, the
+                    value of those who create: artists as a force for social
+                    change.
                   </>
                 }
               />
@@ -69,8 +70,8 @@ export default function HomePage() {
           eyebrow={<T es="Nuestros pilares" en="Our pillars" />}
           title={
             <T
-              es="Tres fuerzas, un mismo propósito"
-              en="Three forces, one purpose"
+              es="Distintos campos, un mismo propósito"
+              en="Different fields, one purpose"
             />
           }
           intro={
@@ -83,11 +84,16 @@ export default function HomePage() {
         />
         <div className="mt-14 grid gap-6 md:grid-cols-3">
           <Pillar
-            title={<T es="Arte, música y tecnología" en="Art, music and technology" />}
+            title={
+              <T
+                es="Arte, música, ciencia y tecnología"
+                en="Art, music, science and technology"
+              />
+            }
             description={
               <T
-                es="La creación artística potenciada por herramientas digitales, para llegar más lejos y a más personas sin perder su alma."
-                en="Artistic creation powered by digital tools, to reach further and more people without losing its soul."
+                es="La creación artística potenciada por la ciencia y las herramientas digitales, para llegar más lejos y a más personas sin perder su alma."
+                en="Artistic creation powered by science and digital tools, to reach further and more people without losing its soul."
               />
             }
           />
@@ -106,8 +112,8 @@ export default function HomePage() {
             title={<T es="Sostenibilidad" en="Sustainability" />}
             description={
               <T
-                es="Proyectos con impacto social, cultural y económico duradero, pensados para sostenerse y multiplicarse en el tiempo."
-                en="Projects with lasting social, cultural and economic impact, designed to sustain and multiply over time."
+                es="Proyectos que cuidan el medio ambiente y generan un impacto social, cultural y económico duradero, pensados para sostenerse y multiplicarse en el tiempo."
+                en="Projects that care for the environment and create lasting social, cultural and economic impact, designed to sustain and multiply over time."
               />
             }
           />
