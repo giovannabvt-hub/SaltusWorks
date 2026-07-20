@@ -47,7 +47,7 @@ export default function ChispaPage() {
       {/* Título CHISPA + subtítulo + descripción */}
       <Section className="pt-16 text-center sm:pt-20">
         <Reveal className="mx-auto max-w-3xl">
-          <h1 className="font-display font-bold leading-none text-white [font-size:clamp(48px,9vw,88px)] [font-variant:small-caps] [letter-spacing:0.04em]">
+          <h1 className="font-display font-normal leading-none text-glow-200 drop-shadow-[0_0_38px_rgba(233,178,106,0.55)] [font-size:clamp(48px,9vw,88px)] [font-variant:small-caps] [letter-spacing:0.06em]">
             CHISPA
           </h1>
           <p className="mt-5 text-xs font-semibold uppercase tracking-[0.28em] text-glow-400 sm:text-sm sm:tracking-[0.32em]">
