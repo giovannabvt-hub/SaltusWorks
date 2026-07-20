@@ -5,16 +5,15 @@ import {
   Pillar,
   CTASection,
   Button,
-  Eyebrow,
 } from "@/components/ui";
 import { Reveal } from "@/components/Reveal";
 import { T } from "@/lib/i18n";
 import { asset } from "@/lib/basePath";
 
 export const metadata: Metadata = {
-  title: "CHISPA · Arte, Vida y Sanación",
+  title: "CHISPA · Arte, Música, Ciencias de la Salud",
   description:
-    "CHISPA acerca el arte a cualquier persona que lo necesite, para cuidar su salud y acompañar su momento. Arte, comunidad y salud, respaldados por evidencia clínica.",
+    "CHISPA integra el arte en centros oncológicos y de salud para acompañar a los pacientes durante su tratamiento. Arte, música y ciencias de la salud, con respaldo clínico.",
 };
 
 export default function ChispaPage() {
@@ -45,27 +44,22 @@ export default function ChispaPage() {
         </div>
       </header>
 
-      {/* Título e introducción */}
+      {/* Título CHISPA + subtítulo + descripción */}
       <Section className="pt-16 text-center sm:pt-20">
         <Reveal className="mx-auto max-w-3xl">
-          <div className="flex justify-center">
-            <Eyebrow>
-              <T
-                es="CHISPA · Arte, Vida y Sanación"
-                en="CHISPA · Art, Life and Healing"
-              />
-            </Eyebrow>
-          </div>
-          <h1 className="mt-5 font-serif text-4xl leading-tight text-white sm:text-5xl lg:text-6xl">
-            <T
-              es="El arte no es un lujo. Es una necesidad humana."
-              en="Art is not a luxury. It is a human need."
-            />
+          <h1 className="font-display font-bold leading-none text-white [font-size:clamp(48px,9vw,88px)] [font-variant:small-caps] [letter-spacing:0.04em]">
+            CHISPA
           </h1>
-          <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-night-200">
+          <p className="mt-5 text-xs font-semibold uppercase tracking-[0.28em] text-glow-400 sm:text-sm sm:tracking-[0.32em]">
             <T
-              es="CHISPA acerca el arte a cualquier persona que lo necesite, para cuidar su salud y acompañar el momento que esté atravesando. Trabaja en la intersección del arte, la comunidad y la salud."
-              en="CHISPA brings art to anyone who needs it, to care for their health and accompany the moment they are going through. It works at the intersection of art, community and health."
+              es="Arte · Música · Ciencias de la Salud"
+              en="Art · Music · Health Sciences"
+            />
+          </p>
+          <p className="mx-auto mt-7 max-w-2xl text-lg leading-relaxed text-night-200">
+            <T
+              es="CHISPA integra el arte en centros oncológicos y de salud para acompañar a las personas durante su tratamiento. Artistas, terapeutas y científicos crean junto a cada paciente, para que la música y el arte sean parte de su proceso y mejoren su bienestar físico y emocional."
+              en="CHISPA integrates art into oncology and health centers to accompany people through their treatment. Artists, therapists and scientists create alongside each patient, so that music and art become part of their journey and improve their physical and emotional wellbeing."
             />
           </p>
         </Reveal>
