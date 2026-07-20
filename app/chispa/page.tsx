@@ -91,8 +91,7 @@ export default function ChispaPage() {
                     El nombre <span className="text-glow-200">CHISPA</span> es un
                     homenaje a <span className="text-glow-200">Elías</span>, un
                     artista y amigo cuya alma creó arte que lo mantiene vivo para
-                    siempre. Es esa pequeña luz que permanece cuando todo lo demás
-                    se apaga.{" "}
+                    siempre.{" "}
                     <span className="text-night-100">
                       El arte nos recuerda que lo esencial no desaparece: mientras
                       exista una obra, quienes la crearon siguen con nosotros.
@@ -104,8 +103,7 @@ export default function ChispaPage() {
                     The name <span className="text-glow-200">CHISPA</span>{" "}
                     (spark) is a tribute to{" "}
                     <span className="text-glow-200">Elías</span>, an artist and
-                    friend whose soul created art that keeps him alive forever. It
-                    is that small light that remains when everything else fades.{" "}
+                    friend whose soul created art that keeps him alive forever.{" "}
                     <span className="text-night-100">
                       Art reminds us that what is essential never disappears: as
                       long as a work exists, those who made it are still with us.
