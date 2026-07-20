@@ -94,7 +94,8 @@ export default function ChispaPage() {
                     siempre. Es esa pequeña luz que permanece cuando todo lo demás
                     se apaga.{" "}
                     <span className="text-night-100">
-                      Es lo que venimos a cuidar.
+                      El arte nos recuerda que lo esencial no desaparece: mientras
+                      exista una obra, quienes la crearon siguen con nosotros.
                     </span>
                   </>
                 }
@@ -104,10 +105,10 @@ export default function ChispaPage() {
                     (spark) is a tribute to{" "}
                     <span className="text-glow-200">Elías</span>, an artist and
                     friend whose soul created art that keeps him alive forever. It
-                    is that small light that remains when everything else goes
-                    out.{" "}
+                    is that small light that remains when everything else fades.{" "}
                     <span className="text-night-100">
-                      That is what we are here to protect.
+                      Art reminds us that what is essential never disappears: as
+                      long as a work exists, those who made it are still with us.
                     </span>
                   </>
                 }
