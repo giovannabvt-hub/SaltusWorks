@@ -13,12 +13,10 @@ import { Spark } from "@/components/Spark";
 import { T } from "@/lib/i18n";
 import { asset } from "@/lib/basePath";
 
-const LIGHTHOUSE_URL = "https://www.pharosophia.org/lighthouse-launcher.html";
-
 export const metadata: Metadata = {
   title: "The Lighthouse App",
   description:
-    "The Lighthouse es un ecosistema educativo que usa la música como llave para descubrir, aprender y conectar: vinilos coleccionables sorpresa y una plataforma digital en pharosophia.org.",
+    "The Lighthouse es un ecosistema educativo que usa la música como llave para descubrir, aprender y conectar: vinilos coleccionables sorpresa y una plataforma digital en desarrollo.",
 };
 
 export default function LighthousePage() {
@@ -76,8 +74,8 @@ export default function LighthousePage() {
             }
             intro={
               <T
-                es="The Lighthouse funciona a través de dos elementos conectados: una serie de vinilos coleccionables sorpresa, físicos y digitales, y una plataforma digital alojada en pharosophia.org. Cada vinilo trae un código que desbloquea la experiencia educativa en la plataforma."
-                en="The Lighthouse works through two connected elements: a series of surprise collectible vinyls, physical and digital, and a digital platform hosted at pharosophia.org. Each vinyl comes with a code that unlocks the educational experience on the platform."
+                es="The Lighthouse funciona a través de dos elementos conectados: una serie de vinilos coleccionables sorpresa, físicos y digitales, y una plataforma digital. Cada vinilo trae un código que desbloquea la experiencia educativa en la plataforma."
+                en="The Lighthouse works through two connected elements: a series of surprise collectible vinyls, physical and digital, and a digital platform. Each vinyl comes with a code that unlocks the educational experience on the platform."
               />
             }
           />
@@ -87,25 +85,20 @@ export default function LighthousePage() {
           >
             <Spark className="h-7 w-7 text-glow-300" animated />
             <h3 className="mt-4 font-serif text-2xl text-white">
-              <T es="Explorá la plataforma" en="Explore the platform" />
+              <T es="Plataforma en desarrollo" en="Platform in development" />
             </h3>
             <p className="mt-3 text-[15px] leading-relaxed text-night-200">
               <T
-                es="La mejor forma de entender The Lighthouse es entrar y verlo. La plataforma está en construcción y evolución constante."
-                en="The best way to understand The Lighthouse is to step in and see it. The platform is under construction and constantly evolving."
+                es="Estamos construyendo la plataforma con cuidado. Pronto vas a poder explorarla completa desde acá."
+                en="We are building the platform with care. Soon you will be able to explore it in full right here."
               />
             </p>
             <div className="mt-6">
-              <Button href={LIGHTHOUSE_URL} external>
-                <T es="Entrar a The Lighthouse →" en="Enter The Lighthouse →" />
-              </Button>
+              <span className="inline-flex items-center gap-2 rounded-full border border-glow-400/30 bg-glow-400/5 px-5 py-2 text-sm font-medium text-glow-200">
+                <Spark className="h-4 w-4" />
+                <T es="Próximamente" en="Coming soon" />
+              </span>
             </div>
-            <p className="mt-4 text-xs text-night-400">
-              <T
-                es="Se abre pharosophia.org en una pestaña nueva."
-                en="pharosophia.org opens in a new tab."
-              />
-            </p>
           </Reveal>
         </div>
       </Section>
@@ -324,18 +317,16 @@ export default function LighthousePage() {
 
       <CTASection
         eyebrow={<T es="Sé parte" en="Be part of it" />}
-        title={<T es="Entrá a The Lighthouse" en="Enter The Lighthouse" />}
+        title={
+          <T es="Sumate a lo que viene" en="Be part of what's coming" />
+        }
         intro={
           <T
-            es="Explorá la plataforma o sumate a la lista de espera para enterarte de las próximas colecciones."
-            en="Explore the platform or join the waitlist to hear about upcoming collections."
+            es="La plataforma todavía está en desarrollo. Dejanos tu contacto y te avisamos cuando abra y lleguen las próximas colecciones."
+            en="The platform is still in development. Leave us your contact and we'll let you know when it opens and new collections arrive."
           />
         }
         primary={{
-          href: LIGHTHOUSE_URL,
-          label: <T es="Explorar la plataforma" en="Explore the platform" />,
-        }}
-        secondary={{
           href: "/contacto",
           label: <T es="Unirme a la lista de espera" en="Join the waitlist" />,
         }}
