@@ -90,8 +90,8 @@ export function Hero() {
           style={{ animationDelay: "0.55s" }}
         >
           <T
-            es="Integramos música, arte, ciencia y tecnología para promover la salud, el bienestar y un futuro más sostenible, con los artistas como motor de transformación social."
-            en="We integrate music, art, science and technology to advance health, wellbeing and a more sustainable future, with artists as the driving force of social change."
+            es="Integramos música, arte, ciencia y tecnología para promover la salud, el bienestar y un futuro más sostenible, con los artistas como motor de transformación social. Los Objetivos de Desarrollo Sostenible de la ONU son la base de cada uno de nuestros proyectos."
+            en="We integrate music, art, science and technology to advance health, wellbeing and a more sustainable future, with artists as the driving force of social change. The UN Sustainable Development Goals are the foundation of every one of our projects."
           />
         </p>
         <div
@@ -110,6 +110,21 @@ export function Hero() {
           >
             <T es="Descubrí los proyectos" en="Explore the projects" />
           </Link>
+        </div>
+        <div
+          className="animate-rise mt-6"
+          style={{ animationDelay: "0.85s" }}
+        >
+          <a
+            href="#ods"
+            className="inline-flex items-center gap-1.5 text-sm text-glow-200 underline-offset-4 transition-colors hover:text-glow-300 hover:underline"
+          >
+            <T
+              es="Conocé los Objetivos de Desarrollo Sostenible que nos guían"
+              en="Discover the Sustainable Development Goals that guide us"
+            />
+            <span aria-hidden="true">→</span>
+          </a>
         </div>
       </div>
 

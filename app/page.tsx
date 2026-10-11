@@ -174,7 +174,7 @@ export default function HomePage() {
       </Section>
 
       {/* Objetivos de Desarrollo Sostenible */}
-      <Section className="border-y border-white/5 bg-white/[0.015]">
+      <Section id="ods" className="scroll-mt-24 border-y border-white/5 bg-white/[0.015]">
         <div className="grid gap-12 lg:grid-cols-[1fr_1.1fr] lg:gap-20">
           <SectionTitle
             eyebrow={<T es="Compromiso global" en="Global commitment" />}
