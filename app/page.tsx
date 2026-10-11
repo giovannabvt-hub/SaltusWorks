@@ -194,8 +194,8 @@ export default function HomePage() {
             </p>
             <p>
               <T
-                es="Cada proyecto de Saltus Works trabaja en servicio de estos objetivos: The Lighthouse canaliza el aprendizaje en donaciones reales a causas alineadas con los ODS, y CHISPA aporta a la salud y el bienestar a través del arte."
-                en="Every Saltus Works project works in service of these goals: The Lighthouse channels learning into real donations to SDG-aligned causes, and CHISPA contributes to health and wellbeing through art."
+                es="Cada proyecto de Saltus Works trabaja en servicio de estos objetivos: The Lighthouse convierte la música y el aprendizaje en cultura, acción solidaria y financiamiento real para artistas y causas alineadas con los ODS, y CHISPA aporta a la salud y el bienestar a través del arte."
+                en="Every Saltus Works project works in service of these goals: The Lighthouse turns music and learning into culture, charitable action and real funding for artists and SDG-aligned causes, and CHISPA contributes to health and wellbeing through art."
               />
             </p>
             <div className="pt-2">
