@@ -11,6 +11,15 @@ import { Reveal } from "@/components/Reveal";
 import { T } from "@/lib/i18n";
 
 export default function HomePage() {
+  const ods = [
+    { num: 3, color: "#4C9F38", es: "Salud y bienestar", en: "Good Health and Well-being" },
+    { num: 4, color: "#C5192D", es: "Educación de calidad", en: "Quality Education" },
+    { num: 10, color: "#DD1367", es: "Reducción de las desigualdades", en: "Reduced Inequalities" },
+    { num: 12, color: "#BF8B2E", es: "Producción y consumo responsables", en: "Responsible Consumption and Production" },
+    { num: 13, color: "#3F7E44", es: "Acción por el clima", en: "Climate Action" },
+    { num: 17, color: "#19486A", es: "Alianzas para lograr los objetivos", en: "Partnerships for the Goals" },
+  ];
+
   return (
     <>
       <Hero />
@@ -212,6 +221,25 @@ export default function HomePage() {
               />
             </div>
           </Reveal>
+        </div>
+        <div className="mt-12 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          {ods.map((o, i) => (
+            <Reveal
+              key={o.num}
+              delay={(i % 3) * 80}
+              className="flex items-center gap-3 rounded-xl border border-white/8 bg-white/[0.02] p-4"
+            >
+              <span
+                className="flex h-10 w-10 shrink-0 items-center justify-center rounded-md font-serif text-lg font-semibold text-white"
+                style={{ backgroundColor: o.color }}
+              >
+                {o.num}
+              </span>
+              <span className="text-sm leading-snug text-night-100">
+                <T es={o.es} en={o.en} />
+              </span>
+            </Reveal>
+          ))}
         </div>
       </Section>
 
