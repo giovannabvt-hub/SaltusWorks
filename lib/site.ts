@@ -2,7 +2,7 @@ export const site = {
   name: "Saltus Works",
   tagline: "Arte y tecnología al servicio del bienestar",
   description:
-    "Saltus Works une música, arte, ciencia y tecnología al servicio del bienestar, la salud, el medio ambiente y la sostenibilidad. Defendemos el valor del arte y de los artistas como motor de transformación social.",
+    "Saltus Works integra música, arte, ciencia y tecnología para promover la salud, el bienestar y un futuro más sostenible, con los artistas como motor de transformación social.",
   url: "https://saltusworks.org",
   origin: "Argentina, con proyección internacional",
   email: "pharos@saltus.works",

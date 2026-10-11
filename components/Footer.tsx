@@ -13,7 +13,7 @@ export function Footer() {
             <p className="mt-5 text-sm leading-relaxed text-night-200">
               <T
                 es={site.description}
-                en="Saltus Works brings together music, art, science and technology in the service of wellbeing, health, the environment and sustainability. We champion the value of art and artists as a force for social change."
+                en="Saltus Works integrates music, art, science and technology to advance health, wellbeing and a more sustainable future, with artists as the driving force of social change."
               />
             </p>
             <p className="mt-4 flex items-center gap-2 text-xs uppercase tracking-widest text-night-400">
