@@ -5,6 +5,7 @@ import {
   ProjectCard,
   CTASection,
   Pillar,
+  Button,
 } from "@/components/ui";
 import { Reveal } from "@/components/Reveal";
 import { T } from "@/lib/i18n";
@@ -127,8 +128,8 @@ export default function HomePage() {
           title={<T es="Dos proyectos, un mismo fin" en="Two projects, one goal" />}
           intro={
             <T
-              es="Saltus Works crea y aloja dos iniciativas que llevan su misión a la práctica."
-              en="Saltus Works creates and hosts two initiatives that put its mission into practice."
+              es="Saltus Works crea y aloja dos iniciativas que llevan su misión a la práctica y colaboran con los Objetivos de Desarrollo Sostenible de la ONU."
+              en="Saltus Works creates and hosts two initiatives that put its mission into practice and collaborate with the UN Sustainable Development Goals."
             />
           }
         />
@@ -163,8 +164,58 @@ export default function HomePage() {
         </div>
       </Section>
 
+      {/* Objetivos de Desarrollo Sostenible */}
+      <Section className="border-y border-white/5 bg-white/[0.015]">
+        <div className="grid gap-12 lg:grid-cols-[1fr_1.1fr] lg:gap-20">
+          <SectionTitle
+            eyebrow={<T es="Compromiso global" en="Global commitment" />}
+            title={
+              <T
+                es="Los Objetivos de Desarrollo Sostenible"
+                en="The Sustainable Development Goals"
+              />
+            }
+          />
+          <Reveal className="space-y-5 text-lg leading-relaxed text-night-200">
+            <p>
+              <T
+                es="Los Objetivos de Desarrollo Sostenible (ODS) son 17 metas globales que la ONU adoptó en 2015: un plan compartido para erradicar la pobreza, proteger el planeta y asegurar bienestar y paz para todas las personas hacia 2030."
+                en="The Sustainable Development Goals (SDGs) are 17 global goals adopted by the UN in 2015: a shared plan to end poverty, protect the planet and ensure wellbeing and peace for everyone by 2030."
+              />
+            </p>
+            <p>
+              <T
+                es="Cada proyecto de Saltus Works trabaja en servicio de estos objetivos: The Lighthouse canaliza el aprendizaje en donaciones reales a causas alineadas con los ODS, y CHISPA aporta a la salud y el bienestar a través del arte."
+                en="Every Saltus Works project works in service of these goals: The Lighthouse channels learning into real donations to SDG-aligned causes, and CHISPA contributes to health and wellbeing through art."
+              />
+            </p>
+            <div className="pt-2">
+              <T
+                es={
+                  <Button
+                    href="https://www.un.org/sustainabledevelopment/es/sustainable-development-goals/"
+                    variant="ghost"
+                    external
+                  >
+                    Conocer los ODS →
+                  </Button>
+                }
+                en={
+                  <Button
+                    href="https://www.un.org/sustainabledevelopment/sustainable-development-goals/"
+                    variant="ghost"
+                    external
+                  >
+                    Learn about the SDGs →
+                  </Button>
+                }
+              />
+            </div>
+          </Reveal>
+        </div>
+      </Section>
+
       <CTASection
-        eyebrow={<T es="Sumate" en="Join us" />}
         title={
           <T
             es="Sumate a transformar vidas a través del arte"
