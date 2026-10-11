@@ -92,8 +92,8 @@ export default function ChispaPage() {
                     homenaje a <span className="text-glow-200">Elías</span>, un
                     artista y amigo que nos recuerda que{" "}
                     <span className="text-night-100">
-                      quienes amamos siempre siguen con nosotros, y que cada obra
-                      de arte está para recordárnoslo.
+                      quienes amamos siempre siguen con nosotros, y que el arte
+                      es la huella que vuelve eterna su presencia.
                     </span>
                   </>
                 }
@@ -104,8 +104,8 @@ export default function ChispaPage() {
                     <span className="text-glow-200">Elías</span>, an artist and
                     friend who reminds us that{" "}
                     <span className="text-night-100">
-                      those we love are always with us, and that every work of
-                      art is here to remind us of it.
+                      those we love are always with us, and that art is the trace
+                      that makes their presence eternal.
                     </span>
                   </>
                 }
