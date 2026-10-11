@@ -28,8 +28,8 @@ export default function SobrePage() {
         }
         intro={
           <T
-            es="Saltus Works es la organización que crea y aloja The Lighthouse y CHISPA. Nace de una convicción simple y ambiciosa: el arte y los artistas pueden mejorar la calidad de vida de las personas y llevar luz al mundo."
-            en="Saltus Works is the organization that creates and hosts The Lighthouse and CHISPA. It is born from a simple, ambitious conviction: art and artists can improve people's quality of life and bring light to the world."
+            es="Saltus Works es la organización que crea y aloja The Lighthouse y CHISPA. Nace de una convicción simple y ambiciosa: el arte y los artistas pueden mejorar la calidad de vida de las personas y del mundo que habitan."
+            en="Saltus Works is the organization that creates and hosts The Lighthouse and CHISPA. It is born from a simple, ambitious conviction: art and artists can improve the quality of life of people and the world they live in."
           />
         }
       />

@@ -1,6 +1,6 @@
 export const site = {
   name: "Saltus Works",
-  tagline: "Arte que lleva luz al mundo",
+  tagline: "Arte y tecnología al servicio del bienestar",
   description:
     "Saltus Works une música, arte, ciencia y tecnología al servicio del bienestar, la salud, el medio ambiente y la sostenibilidad. Defendemos el valor del arte y de los artistas como motor de transformación social.",
   url: "https://saltusworks.org",

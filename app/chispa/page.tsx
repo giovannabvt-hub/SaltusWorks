@@ -72,8 +72,8 @@ export default function ChispaPage() {
             eyebrow={<T es="Quiénes somos" en="Who we are" />}
             title={
               <T
-                es="Una luz que nadie puede apagar"
-                en="A light no one can extinguish"
+                es="Lo esencial no desaparece"
+                en="What is essential endures"
               />
             }
           />
@@ -304,7 +304,7 @@ export default function ChispaPage() {
         title={
           <T
             es="Ayudanos a encender más chispas"
-            en="Help us light more sparks"
+            en="Help us ignite more sparks"
           />
         }
         intro={

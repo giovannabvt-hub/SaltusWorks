@@ -291,7 +291,7 @@ export default function LighthousePage() {
                     La tecnología al servicio del arte, y el arte al servicio de
                     la salud:{" "}
                     <span className="text-glow-200">
-                      un mismo ecosistema de luz.
+                      un mismo ecosistema al servicio del bienestar.
                     </span>
                   </>
                 }
@@ -300,7 +300,7 @@ export default function LighthousePage() {
                     Technology in the service of art, and art in the service of
                     health:{" "}
                     <span className="text-glow-200">
-                      one single ecosystem of light.
+                      one single ecosystem for wellbeing.
                     </span>
                   </>
                 }

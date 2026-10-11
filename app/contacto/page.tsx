@@ -19,8 +19,8 @@ export default function ContactoPage() {
         eyebrow={<T es="Contacto" en="Contact" />}
         title={
           <T
-            es="Hablemos de arte, salud y luz"
-            en="Let's talk about art, health and light"
+            es="Hablemos de arte, tecnología y bienestar"
+            en="Let's talk about art, technology and wellbeing"
           />
         }
         intro={

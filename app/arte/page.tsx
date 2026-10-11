@@ -38,8 +38,8 @@ export default function ArtePage() {
         }
         intro={
           <T
-            es="Un journal en construcción: aquí difundiremos obra y voces de artistas de distintos lugares del mundo, porque dar visibilidad al arte también es llevar luz."
-            en="A journal in the making: here we will share work and voices of artists from different parts of the world, because giving art visibility is also bringing light."
+            es="Un journal en construcción: aquí difundiremos obra y voces de artistas de distintos lugares del mundo, porque dar visibilidad al arte también es cuidar a quienes lo crean."
+            en="A journal in the making: here we will share work and voices of artists from different parts of the world, because giving art visibility is also caring for those who create it."
           />
         }
       />

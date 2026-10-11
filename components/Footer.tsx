@@ -97,7 +97,7 @@ export function Footer() {
           </p>
           <p className="flex items-center gap-2">
             <Spark className="h-3 w-3 text-glow-400" />
-            <T es={site.tagline} en="Art that brings light to the world" />
+            <T es={site.tagline} en="Art and technology in the service of wellbeing" />
           </p>
         </div>
       </div>

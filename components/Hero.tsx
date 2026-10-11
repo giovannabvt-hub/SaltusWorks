@@ -73,14 +73,14 @@ export function Hero() {
           <T
             es={
               <>
-                Llevamos luz al mundo a través{" "}
-                <span className="text-glow-300">del arte</span>
+                Arte y tecnología al servicio{" "}
+                <span className="text-glow-300">del bienestar</span>
               </>
             }
             en={
               <>
-                We bring light to the world{" "}
-                <span className="text-glow-300">through art</span>
+                Art and technology in the service{" "}
+                <span className="text-glow-300">of wellbeing</span>
               </>
             }
           />

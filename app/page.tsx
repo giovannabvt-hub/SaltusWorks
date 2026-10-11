@@ -167,8 +167,8 @@ export default function HomePage() {
         eyebrow={<T es="Sumate" en="Join us" />}
         title={
           <T
-            es="Sumate a llevar luz a través del arte"
-            en="Join us in bringing light through art"
+            es="Sumate a transformar vidas a través del arte"
+            en="Join us in transforming lives through art"
           />
         }
         intro={
