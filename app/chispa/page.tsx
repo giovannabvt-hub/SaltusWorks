@@ -90,10 +90,10 @@ export default function ChispaPage() {
                   <>
                     El nombre <span className="text-glow-200">CHISPA</span> es un
                     homenaje a <span className="text-glow-200">Elías</span>, un
-                    artista y amigo que nos recuerda que,{" "}
+                    artista y amigo que nos recuerda que{" "}
                     <span className="text-night-100">
-                      mientras exista una obra de arte, quienes la crearon siguen
-                      con nosotros.
+                      quienes amamos siempre siguen con nosotros, y que cada obra
+                      de arte está para recordárnoslo.
                     </span>
                   </>
                 }
@@ -102,10 +102,10 @@ export default function ChispaPage() {
                     The name <span className="text-glow-200">CHISPA</span>{" "}
                     (spark) is a tribute to{" "}
                     <span className="text-glow-200">Elías</span>, an artist and
-                    friend who reminds us that,{" "}
+                    friend who reminds us that{" "}
                     <span className="text-night-100">
-                      as long as a work of art exists, those who created it are
-                      still with us.
+                      those we love are always with us, and that every work of
+                      art is here to remind us of it.
                     </span>
                   </>
                 }
