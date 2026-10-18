@@ -122,6 +122,11 @@ export function ProjectCard({
       ? "hover:border-terra-400/50 hover:shadow-terra-500/20"
       : "hover:border-glow-400/50 hover:shadow-glow-400/20";
   const dot = accent === "terra" ? "text-terra-400" : "text-glow-300";
+  const pillClass = `mt-7 inline-flex w-fit items-center gap-2 rounded-full border px-3 py-1 text-xs font-medium transition-colors ${
+    accent === "terra"
+      ? "border-terra-400/30 bg-terra-500/5 text-terra-300 group-hover:bg-terra-500/10"
+      : "border-glow-400/30 bg-glow-400/5 text-glow-200 group-hover:bg-glow-400/10"
+  }`;
 
   return (
     <Reveal
@@ -142,18 +147,19 @@ export function ProjectCard({
       <p className="mt-4 flex-1 text-[15px] leading-relaxed text-night-200">
         {description}
       </p>
-      {comingSoon || !href ? (
-        <span
-          className={`mt-7 inline-flex w-fit items-center gap-2 rounded-full border px-3 py-1 text-xs font-medium ${
-            accent === "terra"
-              ? "border-terra-400/30 bg-terra-500/5 text-terra-300"
-              : "border-glow-400/30 bg-glow-400/5 text-glow-200"
-          }`}
-        >
-          <Spark className="h-3.5 w-3.5" />
-          {cta}
-        </span>
-      ) : (
+      {comingSoon ? (
+        href ? (
+          <Link href={href} className={pillClass}>
+            <Spark className="h-3.5 w-3.5" />
+            {cta}
+          </Link>
+        ) : (
+          <span className={pillClass}>
+            <Spark className="h-3.5 w-3.5" />
+            {cta}
+          </span>
+        )
+      ) : href ? (
         <Link
           href={href}
           className={`mt-7 inline-flex items-center gap-2 text-sm font-medium ${dot} transition-transform group-hover:gap-3`}
@@ -161,6 +167,11 @@ export function ProjectCard({
           {cta}
           <span aria-hidden="true">→</span>
         </Link>
+      ) : (
+        <span className={pillClass}>
+          <Spark className="h-3.5 w-3.5" />
+          {cta}
+        </span>
       )}
     </Reveal>
   );

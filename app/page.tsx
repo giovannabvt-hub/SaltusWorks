@@ -179,6 +179,7 @@ export default function HomePage() {
                 en="The app we're building to make giving and receiving help simpler and shared by everyone."
               />
             }
+            href="/faline"
             cta={<T es="Próximamente" en="Coming soon" />}
             accent="glow"
             comingSoon

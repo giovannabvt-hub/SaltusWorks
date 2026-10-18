@@ -20,6 +20,7 @@ export const nav: NavItem[] = [
   { label: "Sobre nosotros", labelEn: "About", href: "/sobre" },
   { label: "The Lighthouse App", labelEn: "The Lighthouse App", href: "/lighthouse" },
   { label: "CHISPA", labelEn: "CHISPA", href: "/chispa" },
+  { label: "Faline", labelEn: "Faline", href: "/faline" },
   { label: "Semillas", labelEn: "Seeds", href: "/arte" },
   { label: "Comunidad Saltus", labelEn: "Saltus Community", href: "/comunidad" },
   { label: "Contacto", labelEn: "Contact", href: "/contacto" },
