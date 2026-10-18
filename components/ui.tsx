@@ -105,14 +105,16 @@ export function ProjectCard({
   href,
   cta,
   accent = "glow",
+  comingSoon = false,
   delay = 0,
 }: {
   kicker: ReactNode;
   title: ReactNode;
   description: ReactNode;
-  href: string;
+  href?: string;
   cta: ReactNode;
   accent?: "glow" | "terra";
+  comingSoon?: boolean;
   delay?: number;
 }) {
   const ring =
@@ -140,13 +142,26 @@ export function ProjectCard({
       <p className="mt-4 flex-1 text-[15px] leading-relaxed text-night-200">
         {description}
       </p>
-      <Link
-        href={href}
-        className={`mt-7 inline-flex items-center gap-2 text-sm font-medium ${dot} transition-transform group-hover:gap-3`}
-      >
-        {cta}
-        <span aria-hidden="true">→</span>
-      </Link>
+      {comingSoon || !href ? (
+        <span
+          className={`mt-7 inline-flex w-fit items-center gap-2 rounded-full border px-3 py-1 text-xs font-medium ${
+            accent === "terra"
+              ? "border-terra-400/30 bg-terra-500/5 text-terra-300"
+              : "border-glow-400/30 bg-glow-400/5 text-glow-200"
+          }`}
+        >
+          <Spark className="h-3.5 w-3.5" />
+          {cta}
+        </span>
+      ) : (
+        <Link
+          href={href}
+          className={`mt-7 inline-flex items-center gap-2 text-sm font-medium ${dot} transition-transform group-hover:gap-3`}
+        >
+          {cta}
+          <span aria-hidden="true">→</span>
+        </Link>
+      )}
     </Reveal>
   );
 }

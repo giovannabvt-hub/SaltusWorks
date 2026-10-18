@@ -134,15 +134,15 @@ export default function HomePage() {
       <Section>
         <SectionTitle
           eyebrow={<T es="Qué impulsamos" en="What we drive" />}
-          title={<T es="Dos proyectos, un mismo fin" en="Two projects, one goal" />}
+          title={<T es="Tres proyectos, un mismo fin" en="Three projects, one goal" />}
           intro={
             <T
-              es="Saltus Works crea y aloja dos iniciativas que llevan su misión a la práctica y colaboran con los Objetivos de Desarrollo Sostenible de la ONU."
-              en="Saltus Works creates and hosts two initiatives that put its mission into practice and collaborate with the UN Sustainable Development Goals."
+              es="Saltus Works crea y aloja tres iniciativas que llevan su misión a la práctica y colaboran con los Objetivos de Desarrollo Sostenible de la ONU."
+              en="Saltus Works creates and hosts three initiatives that put its mission into practice and collaborate with the UN Sustainable Development Goals."
             />
           }
         />
-        <div className="mt-14 grid gap-6 md:grid-cols-2">
+        <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           <ProjectCard
             kicker={<T es="Herramienta digital" en="Digital tool" />}
             title="The Lighthouse App"
@@ -169,6 +169,20 @@ export default function HomePage() {
             cta={<T es="Conocer CHISPA" en="Explore CHISPA" />}
             accent="terra"
             delay={120}
+          />
+          <ProjectCard
+            kicker={<T es="App en desarrollo" en="App in development" />}
+            title="Faline"
+            description={
+              <T
+                es="La app que estamos creando para que dar y recibir ayuda sea más simple y se comparta entre todos."
+                en="The app we're building to make giving and receiving help simpler and shared by everyone."
+              />
+            }
+            cta={<T es="Próximamente" en="Coming soon" />}
+            accent="glow"
+            comingSoon
+            delay={240}
           />
         </div>
       </Section>
