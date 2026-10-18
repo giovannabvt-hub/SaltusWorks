@@ -37,7 +37,7 @@ export function Header() {
         </Link>
 
         {/* Navegación de escritorio */}
-        <nav className="hidden items-center gap-8 lg:flex" aria-label="Principal">
+        <nav className="hidden items-center gap-6 xl:flex" aria-label="Principal">
           {nav.slice(1).map((item) => {
             const active = pathname === item.href;
             return (
@@ -64,7 +64,7 @@ export function Header() {
         </nav>
 
         {/* Controles móviles */}
-        <div className="flex items-center gap-2 lg:hidden">
+        <div className="flex items-center gap-2 xl:hidden">
           <LangToggle />
           <button
             type="button"
@@ -97,7 +97,7 @@ export function Header() {
       {/* Menú móvil */}
       {open && (
         <nav
-          className="border-t border-white/5 bg-night-950/95 px-6 pb-8 pt-2 lg:hidden"
+          className="border-t border-white/5 bg-night-950/95 px-6 pb-8 pt-2 xl:hidden"
           aria-label="Principal móvil"
         >
           {nav.map((item) => {
