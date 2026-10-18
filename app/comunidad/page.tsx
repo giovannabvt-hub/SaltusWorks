@@ -82,8 +82,8 @@ export default function ComunidadPage() {
         eyebrow={<T es="Comunidad Saltus" en="Saltus Community" />}
         title={
           <T
-            es="Un espacio para crear comunidad"
-            en="A space to build community"
+            es="Un espacio para crear juntos"
+            en="A space to build together"
           />
         }
         intro={
